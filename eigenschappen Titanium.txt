@@ -13,4 +13,6 @@ voeding van 400 uA of lager ontwerpen
 
 ruis arme versterker ontwerpen want sensor is 400uA maximaal op 1 koHm
 
+manier van testen bedenken en misschien ontwikkelen.
+
 even kijken met marcel of dit mag gok van wel
