@@ -1,0 +1,16 @@
+Titanium is temperatuur gevoelig (zo goed als linear)
+
+Titanium is niet ferromagnetisch, wat betekent dat het niet aangetrokken wordt door magneten en niet reageert op magnetische velden zoals ijzer, nikkel of kobalt dat doen.
+
+Paramagnetisme: Titanium is paramagnetisch, wat betekent dat het een zeer zwakke reactie vertoont op een extern magnetisch veld. Deze reactie is zo klein dat het in de meeste praktische situaties verwaarloosbaar is.
+Geen remanentie: Anders dan ferromagnetische materialen, behoudt titanium geen magnetisatie wanneer het uit een magnetisch veld wordt verwijderd.
+
+Titanium staat bekend om zijn uitstekende corrosiebestendigheid, voornamelijk vanwege de vorming van een dunne, beschermende oxidelaag (TiO₂) wanneer het in contact komt met zuurstof. Deze oxidelaag beschermt het titanium tegen verdere corrosie in de meeste omgevingen, inclusief die met hoge luchtvochtigheid.
+
+Hoe minder stroom de sensor nodig heeft hoe beter, minder opwarming van de sensor zelf en de sensor minder linear te maken.
+
+voeding van 400 uA of lager ontwerpen
+
+ruis arme versterker ontwerpen want sensor is 400uA maximaal op 1 koHm
+
+even kijken met marcel of dit mag gok van wel
