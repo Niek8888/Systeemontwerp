@@ -1,2 +1,4 @@
 input Spanning mV / uV
-output ADC 12 bit 375 Kbps op 
+output ADC 12 bit 375 Kbps op
+max output 2V
+zo ruis arm om trimmen te voorkomen
