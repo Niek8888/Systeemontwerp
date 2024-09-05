@@ -1,0 +1,2 @@
+input Spanning mV / uV
+output ADC 12 bit 375 Kbps op 
