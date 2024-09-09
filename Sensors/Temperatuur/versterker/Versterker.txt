@@ -2,3 +2,13 @@ input Spanning mV / uV
 output ADC 12 bit 375 Kbps op
 max output 2V
 zo ruis arm om trimmen te voorkomen
+
+
+Voor het maken van de temperatuur sensor
+Stroomspiegel
+https://www.analog.com/en/products/mat12.html
+Stroombron
+Kan ook ontworpen worden
+
+Differentiele versterker
+https://www.analog.com/en/products/ad8220.html
