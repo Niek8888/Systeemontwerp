@@ -1,0 +1,57 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.8 Chrome/128.0.6613.36 Electron/32.0.1 Safari/537.36" version="24.7.8">
+  <diagram name="Pagina-1" id="JBiftjKTRNbKvEROsFFB">
+    <mxGraphModel dx="293" dy="263" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Jg7hE-_0jGUd9htc0hmt-3" value="Spanning" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Jg7hE-_0jGUd9htc0hmt-1" target="Jg7hE-_0jGUd9htc0hmt-2">
+          <mxGeometry y="10" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Jg7hE-_0jGUd9htc0hmt-1" value="Temperatuursensor module" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="360" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Jg7hE-_0jGUd9htc0hmt-5" value="Spanning" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Jg7hE-_0jGUd9htc0hmt-2" target="Jg7hE-_0jGUd9htc0hmt-4">
+          <mxGeometry y="10" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Jg7hE-_0jGUd9htc0hmt-2" value="Anti aliasing filter" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="260" y="360" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Jg7hE-_0jGUd9htc0hmt-7" value="Bits" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Jg7hE-_0jGUd9htc0hmt-4" target="Jg7hE-_0jGUd9htc0hmt-6">
+          <mxGeometry y="10" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Jg7hE-_0jGUd9htc0hmt-4" value="12 bit ADC" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="440" y="360" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Jg7hE-_0jGUd9htc0hmt-6" value="Microcontroller" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="620" y="360" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Jg7hE-_0jGUd9htc0hmt-9" value="Vermogen" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Jg7hE-_0jGUd9htc0hmt-8" target="Jg7hE-_0jGUd9htc0hmt-6">
+          <mxGeometry y="30" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Jg7hE-_0jGUd9htc0hmt-8" value="Voeding" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="260" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Jg7hE-_0jGUd9htc0hmt-11" value="I2c" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Jg7hE-_0jGUd9htc0hmt-10" target="Jg7hE-_0jGUd9htc0hmt-6">
+          <mxGeometry y="-10" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="680" y="440" />
+              <mxPoint x="680" y="440" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Jg7hE-_0jGUd9htc0hmt-10" value="Luchtvochtigheids senors" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="460" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
