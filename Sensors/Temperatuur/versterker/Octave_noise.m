@@ -72,7 +72,7 @@ Input_Noise = sqrt(4 * k * T * R_source);
 total_voltage_noise_input = sqrt((voltage_noise_amplifier).^2 + (voltage_current_noise).^2 + (Input_Noise).^2 + (Noise_Feed_back_resitor).^2);
 
 %output noise amplifier
-output_noise_amplifier = total_voltage_noise_input .* transfer_amplifier;
+output_noise_amplifier = one_over_f_noise_current_opamp .* transfer_amplifier;
 
 
 %noise plot
