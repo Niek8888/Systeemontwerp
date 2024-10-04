@@ -1,0 +1,104 @@
+\documentclass{article}
+\usepackage{amsmath}
+
+\begin{document}
+	
+	\title{Stroomruisberekening van de Stroombron Schakeling}
+	\author{}
+	\date{}
+	\maketitle
+	
+	\section{Introductie}
+	In deze berekening analyseren we de stroomruis van een stroombron schakeling met een NPN-transistor, opamp, en spanningsreferentie. De belangrijkste ruisbronnen zijn de \(1/f\)-ruis en de witte ruis van zowel de spanningsreferentie als de opamp, en de thermische ruis van de weerstand.
+	
+	\section{Stap 1: Ruis van de spanningsreferentie}
+	
+	De spanningsreferentie heeft een \(1/f\)-ruis die dominant is tot aan een cutoff frequentie \( f_{\text{cutoff}} = 10 \, \text{Hz} \), met een witte ruis van \( U_{\text{white, ref}} = 2 \, \mu V/\sqrt{\text{Hz}} \) boven deze frequentie.
+	
+	We berekenen de \(1/f\)-ruis met behulp van de volgende integratieformule:
+	
+	\begin{equation}
+		U_{n,\text{ref, flicker}} = A_{\text{ref}} \cdot \ln\left(\frac{f_{\text{cutoff}}}{f_{\text{low}}}\right)
+	\end{equation}
+	
+	waarbij \( A_{\text{ref}} = U_{\text{white, ref}} \cdot f_{\text{cutoff}} \) en \( f_{\text{low}} = 0.1 \, \text{Hz} \) de lagere frequentiegrens is.
+	
+	Substitueren geeft:
+	
+	\begin{equation}
+		A_{\text{ref}} = 2 \times 10^{-6} \times 10 = 2 \times 10^{-5} \, \text{V}
+	\end{equation}
+	
+	\begin{equation}
+		U_{n,\text{ref, flicker}} = 2 \times 10^{-5} \cdot \ln\left(\frac{10}{0.1}\right) = 2 \times 10^{-5} \cdot \ln(100) = 9.2103 \times 10^{-5} \, \text{V}
+	\end{equation}
+	
+	\section{Stap 2: Ruis van de opamp}
+	
+	De opamp heeft ook \(1/f\)-ruis tot \( f_{\text{cutoff}} = 10 \, \text{Hz} \), met een witte ruis van \( U_{\text{white, opamp}} = 90 \, \text{nV}/\sqrt{\text{Hz}} \).
+	
+	We berekenen de \(1/f\)-ruis op dezelfde manier:
+	
+	\begin{equation}
+		U_{n,\text{opamp, flicker}} = A_{\text{opamp}} \cdot \ln\left(\frac{f_{\text{cutoff}}}{f_{\text{low}}}\right)
+	\end{equation}
+	
+	waarbij \( A_{\text{opamp}} = U_{\text{white, opamp}} \cdot f_{\text{cutoff}} \) en \( f_{\text{low}} = 0.01 \, \text{Hz} \).
+	
+	Substitueren geeft:
+	
+	\begin{equation}
+		A_{\text{opamp}} = 90 \times 10^{-9} \times 10 = 9 \times 10^{-7} \, \text{V}
+	\end{equation}
+	
+	\begin{equation}
+		U_{n,\text{opamp, flicker}} = 9 \times 10^{-7} \cdot \ln\left(\frac{10}{0.01}\right) = 9 \times 10^{-7} \cdot \ln(1000) = 2.0723 \times 10^{-6} \, \text{V}
+	\end{equation}
+	
+	\section{Stap 3: Omrekenen naar stroomruis}
+	
+	De spanningsruis van de spanningsreferentie en de opamp wordt nu omgezet naar stroomruis door de weerstand \( R = 24 \, \text{k}\Omega \) te gebruiken.
+	
+	Voor de spanningsreferentie geldt:
+	
+	\begin{equation}
+		I_{n,\text{ref}} = \frac{U_{n,\text{ref, flicker}}}{R} = \frac{9.2103 \times 10^{-5}}{24000} = 3.8376 \times 10^{-9} \, \text{A}/\sqrt{\text{Hz}}
+	\end{equation}
+	
+	Voor de opamp geldt:
+	
+	\begin{equation}
+		I_{n,\text{opamp}} = \frac{U_{n,\text{opamp, flicker}}}{R} = \frac{2.0723 \times 10^{-6}}{24000} = 8.6346 \times 10^{-11} \, \text{A}/\sqrt{\text{Hz}}
+	\end{equation}
+	
+	\section{Stap 4: Thermische ruis van de weerstand}
+	
+	De thermische ruis van de weerstand wordt berekend met de formule:
+	
+	\begin{equation}
+		I_{n,\text{resistor}} = \sqrt{\frac{4 k_B T}{R}} = \sqrt{\frac{4 \times 1.38 \times 10^{-23} \times 300}{24000}}
+	\end{equation}
+	
+	\begin{equation}
+		I_{n,\text{resistor}} = \sqrt{\frac{1.656 \times 10^{-20}}{24000}} = \sqrt{6.9 \times 10^{-25}} = 8.3066 \times 10^{-13} \, \text{A}/\sqrt{\text{Hz}}
+	\end{equation}
+	
+	\section{Stap 5: Totale stroomruis}
+	
+	De totale stroomruis is de kwadratische som van de stroomruiscomponenten van de spanningsreferentie, de opamp, en de weerstand:
+	
+	\begin{equation}
+		I_{n,\text{total}} = \sqrt{I_{n,\text{ref}}^2 + I_{n,\text{opamp}}^2 + I_{n,\text{resistor}}^2}
+	\end{equation}
+	
+	Substitueren geeft:
+	
+	\begin{equation}
+		I_{n,\text{total}} = \sqrt{(3.8376 \times 10^{-9})^2 + (8.6346 \times 10^{-11})^2 + (8.3066 \times 10^{-13})^2}
+	\end{equation}
+	
+	\begin{equation}
+		I_{n,\text{total}} = \sqrt{1.4727 \times 10^{-17} + 7.4557 \times 10^{-21} + 6.9 \times 10^{-25}} = \sqrt{1.4727 \times 10^{-17}} = 3.8377 \times 10^{-9} \, \text{A}/\sqrt{\text{Hz}}
+	\end{equation}
+	
+\end{document}
