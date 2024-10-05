@@ -10,6 +10,10 @@ clear
 
 run('Octave_input_noise.m');
 
+low_voltage_sensor = I_sensor * 980 * 52 * 4;
+high_voltage_sensor = I_sensor * 1194 * 52 * 4;
+voltage_sensor = high_voltage_sensor - low_voltage_sensor
+
 frequentie = logspace(-1, 7, 100000);
 %stap = 1;
 %frequentie = 1:stap:10e6; %beginwaarde : stapgrote : eindwaarde
@@ -19,17 +23,14 @@ k = 1.380649e-23;  % Boltzmann constant in J/K
 c = 55;
 T = c + 273.15;
 
-
-
 % source impedance %
-R_source = 1e3;
+R_source = 1180;
 source_impedance = R_source;
 
 % Pre-amp %
 %overdracht amplifier
 gain = 52; %versterking van amplifier
 fc = 350e3; %cutoff frequentie amplifier
-
 R = 1;
 C = 1 / (2 * pi * R * fc);
 
@@ -53,11 +54,53 @@ voltgage_current_noise = current_noise_amplifier .* source_impedance;
 Feed_back_resitor = 972;
 Noise_Feed_back_resitor = sqrt(4 * k * T * Feed_back_resitor);
 %Input Noise
-Input_Noise = sqrt(4 * k * T * R_source + (I_n_total_input*1194).^2)
+Input_Noise = sqrt(4 * k * T * R_source + (I_n_total_input*1194).^2);
 %total Voltage Input Noise from amplifier
 total_voltage_noise_input = sqrt((voltage_noise_amplifier).^2 + (voltgage_current_noise).^2 + (Input_Noise).^2 + (Noise_Feed_back_resitor).^2);
 %output noise amplifier
 output_noise_amplifier = total_voltage_noise_input .* transfer_amplifier;
+
+
+
+
+% overdracht amplifier second amplifier
+gain_2 = 4;
+fc_2 = 1e6;
+R = 1;
+C = 1 / (2 * pi * R * fc_2);
+
+# geen idee wat dit is moet ik nog uitzoeken
+source_impedance = 10;
+
+H_2 = 1 ./ sqrt(1 + (frequentie * 2 * pi * R * C).^2 );
+transfer_amplifier_2 = H_2 * gain_2;
+
+%Equivalent Voltage Input Noise from second amplifier
+%Breedbandruis
+broadband_voltage_noise = 15e-9;
+%1 over F ruis op 1 Hz
+voltage_noise_low = 60e-9;
+%1 over F ruis
+one_over_F_voltage_noise = (sqrt((voltage_noise_low)^2 - (broadband_voltage_noise)^2) ./ (frequentie));
+%total
+voltage_noise_amplifier = sqrt((one_over_F_voltage_noise).^2 + (broadband_voltage_noise)^2);
+%Equivalent Current Input Noise from second amplifier
+current_noise_amplifier = 1e-15;
+voltgage_current_noise = current_noise_amplifier .* source_impedance;
+%Voltage Input Noise from Feed_back_resitor
+Feed_back_resitor = 16500;
+Noise_Feed_back_resitor = sqrt(4 * k * T * Feed_back_resitor);
+%Input Noise
+Input_Noise = sqrt((output_noise_amplifier).^2 + (U_n_ref_total_new).^2);
+%total Voltage Input Noise from second amplifier
+total_voltage_noise_input_2 = sqrt((voltage_noise_amplifier).^2 + (voltgage_current_noise).^2 + (Input_Noise).^2 + (Noise_Feed_back_resitor).^2);
+%output noise second amplifier
+output_noise_amplifier_2 = total_voltage_noise_input_2 .* transfer_amplifier_2;
+
+
+
+% met stijn dit controleren of dit klopt denk het wel
+
 
 %noise plot
 loglog(frequentie, output_noise_amplifier);
