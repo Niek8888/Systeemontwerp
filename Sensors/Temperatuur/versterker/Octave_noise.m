@@ -98,20 +98,14 @@ total_voltage_noise_input_2 = sqrt((voltage_noise_amplifier).^2 + (voltgage_curr
 output_noise_amplifier_2 = total_voltage_noise_input_2 .* transfer_amplifier_2;
 
 
-
-% met stijn dit controleren of dit klopt denk het wel
-
-
-%noise plot
 loglog(frequentie, output_noise_amplifier);
 hold on
 %loglog(frequentie, total_voltage_noise_input);
 %hold on
 
-xlabel('frequentie Hz');
-ylabel('v/sqrt(Hz)');
-%legend('input noise amplifier','resitor input noise','voltgage current noise','total noise input');
+xlabel('frequentie Hz', "fontsize", 40);
+ylabel('v/sqrt(Hz)', "fontsize", 40);
+legend('output noise amplifier', 'Location', 'best', "FontSize", 20); % aanpassing voor de legende
+set(gca, 'FontSize', 40);  % aanpassing voor de eenheidstapjes (ticks)
 grid on;
 pause;
-
-
