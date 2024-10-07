@@ -9,6 +9,7 @@ clear
 %femto ampere fA e-15
 
 f_high = 1;  % Bovenste frequentiegrens voor de berekeningen
+% de sensor heeft een regeltijd van 10 Seconden in een omgeving waar het waait met 1 m/s
 
 run('Octave_input_noise.m');
 
