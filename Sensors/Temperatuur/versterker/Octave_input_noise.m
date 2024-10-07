@@ -2,7 +2,7 @@
 R = 24000;  % Weerstand in Ohm
 c = 55;     % temperatuur in celcius
 T = c + 273,15;   % temperatuur in kelvin
-k_B = 1.38e-23;  % Boltzmann constante
+k_B = 1.380649e-23;  % Boltzmann constante
 I_sensor = (128/3)* 10 ^ -6;
 
 % Witte ruiswaarden
@@ -13,7 +13,7 @@ U_white_opamp = 90e-9;  % Opamp witte ruis in V/sqrt(Hz)
 f_cutoff = 10;  % Frequentie waar de witte ruis het overneemt (10 Hz)
 f_low_ref = 0.1;  % Lagere frequentiegrens voor referentie
 f_low_opamp = 0.01;  % Lagere frequentiegrens voor opamp
-f_high = 5;  % Bovenste frequentiegrens voor de berekeningen
+
 
 % Functie voor integratie van 1/f-ruis
 function result = integrate_flicker_noise(low_f, cutoff_f, A)

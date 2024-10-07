@@ -8,11 +8,16 @@ clear
 %pico ampere pA e-12
 %femto ampere fA e-15
 
+f_high = 1;  % Bovenste frequentiegrens voor de berekeningen
+
 run('Octave_input_noise.m');
 
 low_voltage_sensor = I_sensor * 980 * 52 * 4;
 high_voltage_sensor = I_sensor * 1194 * 52 * 4;
-voltage_sensor = high_voltage_sensor - low_voltage_sensor
+voltage_sensor = high_voltage_sensor - low_voltage_sensor;
+voltage_ADC = 3.3;
+bit_resolution = voltage_ADC/(2^12);
+
 
 frequentie = logspace(-1, 7, 100000);
 %stap = 1;
@@ -20,8 +25,6 @@ frequentie = logspace(-1, 7, 100000);
 
 %k = physconst('Boltzmann');
 k = 1.380649e-23;  % Boltzmann constant in J/K
-c = 55;
-T = c + 273.15;
 
 % source impedance %
 R_source = 1180;
@@ -97,6 +100,16 @@ total_voltage_noise_input_2 = sqrt((voltage_noise_amplifier).^2 + (voltgage_curr
 %output noise second amplifier
 output_noise_amplifier_2 = total_voltage_noise_input_2 .* transfer_amplifier_2;
 
+% Maak een interpolatiefunctie van output_noise_amplifier_2 afhankelijk van frequentie
+output_noise_func = @(f) interp1(frequentie, output_noise_amplifier_2, f, 'linear');
+
+Ruis_vermogen = integral(output_noise_func, 0.1, f_high);
+SNR_versterker = 20 * log10(voltage_sensor/Ruis_vermogen);
+
+disp(['Spanning van de uitgang sensor ', num2str(voltage_sensor), ' V']);
+disp(['Spanning resulotie van de bits ', num2str(bit_resolution), ' V']);
+disp(['Totale spannings ruis integreed over de bandbreedte: ', num2str(Ruis_vermogen), ' V']);
+disp(['SNR van het totale systeem: ', num2str(SNR_versterker), ' dB']);
 
 loglog(frequentie, output_noise_amplifier);
 hold on
@@ -105,7 +118,6 @@ hold on
 
 xlabel('frequentie Hz', "fontsize", 40);
 ylabel('v/sqrt(Hz)', "fontsize", 40);
-legend('output noise amplifier', 'Location', 'best', "FontSize", 20); % aanpassing voor de legende
 set(gca, 'FontSize', 40);  % aanpassing voor de eenheidstapjes (ticks)
 grid on;
 pause;
