@@ -44,15 +44,15 @@ transfer_amplifier = H * gain;
 
 %Equivalent Voltage Input Noise from amplifier
 %Breedbandruis
-broadband_voltage_noise = 15e-9;
+broadband_voltage_noise = 30e-9;
 %1 over F ruis op 1 Hz
-voltage_noise_low = 60e-9;
+voltage_noise_low = 40e-9;
 %1 over F ruis
 one_over_F_voltage_noise = (sqrt((voltage_noise_low)^2 - (broadband_voltage_noise)^2) ./ (frequentie));
 %total
 voltage_noise_amplifier = sqrt((one_over_F_voltage_noise).^2 + (broadband_voltage_noise)^2);
 %Equivalent Current Input Noise from amplifier
-current_noise_amplifier = 1e-15;
+current_noise_amplifier = 1e-13;
 voltgage_current_noise = current_noise_amplifier .* source_impedance;
 %Voltage Input Noise from Feed_back_resitor
 Feed_back_resitor = 972;
@@ -67,11 +67,11 @@ output_noise_amplifier = total_voltage_noise_input .* transfer_amplifier;
 
 
 
-% overdracht amplifier second amplifier
-gain_2 = 4;
-fc_2 = 1e6;
+%overdracht amplifier
+gain_2 = 4; %versterking van amplifier
+fc = 350e3; %cutoff frequentie amplifier
 R = 1;
-C = 1 / (2 * pi * R * fc_2);
+C = 1 / (2 * pi * R * fc);
 
 # geen idee wat dit is moet ik nog uitzoeken
 source_impedance = 10;
@@ -79,17 +79,17 @@ source_impedance = 10;
 H_2 = 1 ./ sqrt(1 + (frequentie * 2 * pi * R * C).^2 );
 transfer_amplifier_2 = H_2 * gain_2;
 
-%Equivalent Voltage Input Noise from second amplifier
+%Equivalent Voltage Input Noise from amplifier
 %Breedbandruis
-broadband_voltage_noise = 15e-9;
+broadband_voltage_noise = 30e-9;
 %1 over F ruis op 1 Hz
-voltage_noise_low = 60e-9;
+voltage_noise_low = 40e-9;
 %1 over F ruis
 one_over_F_voltage_noise = (sqrt((voltage_noise_low)^2 - (broadband_voltage_noise)^2) ./ (frequentie));
 %total
 voltage_noise_amplifier = sqrt((one_over_F_voltage_noise).^2 + (broadband_voltage_noise)^2);
-%Equivalent Current Input Noise from second amplifier
-current_noise_amplifier = 1e-15;
+%Equivalent Current Input Noise from amplifier
+current_noise_amplifier = 1e-13;
 voltgage_current_noise = current_noise_amplifier .* source_impedance;
 %Voltage Input Noise from Feed_back_resitor
 Feed_back_resitor = 16500;
@@ -101,8 +101,10 @@ total_voltage_noise_input_2 = sqrt((voltage_noise_amplifier).^2 + (voltgage_curr
 %output noise second amplifier
 output_noise_amplifier_2 = total_voltage_noise_input_2 .* transfer_amplifier_2;
 
+output_noise_rc = (1 ./ sqrt(1 + (frequentie * 2 * pi * 1 * (1 / (2 * pi * 1 * 10))).^2 )) .* output_noise_amplifier_2;
+
 % Maak een interpolatiefunctie van output_noise_amplifier_2 afhankelijk van frequentie
-output_noise_func = @(f) interp1(frequentie, output_noise_amplifier_2, f, 'linear');
+output_noise_func = @(f) interp1(frequentie, output_noise_rc, f, 'linear');
 
 Ruis_vermogen = integral(output_noise_func, 0.1, f_high);
 SNR_versterker = 20 * log10(voltage_sensor/Ruis_vermogen);
