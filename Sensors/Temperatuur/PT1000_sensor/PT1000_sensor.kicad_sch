@@ -2591,16 +2591,6 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 87.63) (xy 121.92 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "07dc7d8e-071a-4eb2-896b-ecb1e232d754")
-	)
-	(wire
-		(pts
 			(xy 86.36 74.93) (xy 86.36 76.2)
 		)
 		(stroke
@@ -2628,6 +2618,16 @@
 			(type default)
 		)
 		(uuid "0dde0fd7-0cea-4373-bbae-91c4987ab4fd")
+	)
+	(wire
+		(pts
+			(xy 119.38 87.63) (xy 121.92 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0e7cf5ce-413d-41dd-b3b7-6af3187efa0c")
 	)
 	(wire
 		(pts
@@ -2788,6 +2788,16 @@
 			(type default)
 		)
 		(uuid "3fabda2d-1398-4ded-a26b-fd687119de6d")
+	)
+	(wire
+		(pts
+			(xy 119.38 77.47) (xy 121.92 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "40418487-9f8e-4f18-8127-cb2b618dc6cb")
 	)
 	(wire
 		(pts
@@ -3531,16 +3541,6 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 77.47) (xy 121.92 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f973268a-586a-4582-8586-a6f74e1bd459")
-	)
-	(wire
-		(pts
 			(xy 218.44 30.48) (xy 220.98 30.48)
 		)
 		(stroke
@@ -3599,18 +3599,6 @@
 		)
 		(uuid "ff9dee45-924d-44ce-a4c1-e1c624cd3023")
 	)
-	(hierarchical_label "-V_s"
-		(shape input)
-		(at 119.38 87.63 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "1ef32f2c-1f2e-44ef-9231-b4b1dd167d17")
-	)
 	(hierarchical_label "+V_s"
 		(shape input)
 		(at 88.9 64.77 0)
@@ -3625,6 +3613,30 @@
 	)
 	(hierarchical_label "-V_s"
 		(shape input)
+		(at 119.38 77.47 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "630d8e47-cc05-4ee0-a6af-ff7b2466ff59")
+	)
+	(hierarchical_label "+V_s"
+		(shape input)
+		(at 119.38 87.63 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "97ee2a85-7528-40e1-b0de-811b797e6643")
+	)
+	(hierarchical_label "-V_s"
+		(shape input)
 		(at 88.9 74.93 0)
 		(fields_autoplaced yes)
 		(effects
@@ -3634,18 +3646,6 @@
 			(justify left)
 		)
 		(uuid "d4f74831-d08f-41e8-a315-99ab175cadf2")
-	)
-	(hierarchical_label "+V_s"
-		(shape input)
-		(at 119.38 77.47 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "d6d04ce6-5b06-4b12-88e0-43918474a3ae")
 	)
 	(symbol
 		(lib_id "0_Bibliotheek_Niek:AD8220")
@@ -3657,15 +3657,15 @@
 		(dnp no)
 		(uuid "0f68be6c-ee41-4e39-a50b-10b965a9f045")
 		(property "Reference" "AD2"
-			(at 180.594 76.708 0)
+			(at 176.53 76.962 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "~"
-			(at 182.88 79.4065 0)
+		(property "Value" "AD8226"
+			(at 175.768 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4311,15 +4311,15 @@
 		(dnp no)
 		(uuid "30248ac6-623a-4e99-8069-9f86911f53c3")
 		(property "Reference" "AD1"
-			(at 136.144 77.47 0)
+			(at 135.636 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "~"
-			(at 143.51 79.4065 0)
+		(property "Value" "AD8226"
+			(at 135.128 75.692 0)
 			(effects
 				(font
 					(size 1.27 1.27)

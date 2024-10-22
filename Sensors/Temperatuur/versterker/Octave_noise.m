@@ -101,7 +101,7 @@ total_voltage_noise_input_2 = sqrt((voltage_noise_amplifier).^2 + (voltgage_curr
 %output noise second amplifier
 output_noise_amplifier_2 = total_voltage_noise_input_2 .* transfer_amplifier_2;
 
-output_noise_rc = (1 ./ sqrt(1 + (frequentie * 2 * pi * 1 * (1 / (2 * pi * 1 * 10))).^2 )) .* output_noise_amplifier_2;
+output_noise_rc = (1 ./ sqrt(1 + (frequentie * 2 * pi * 1 * (1 / (2 * pi * 1 * 10))).^2 )) .* output_noise_amplifier_2 .* (1 ./ sqrt(1 + (frequentie * 2 * pi * 1 * (1 / (2 * pi * 1 * 5e5))).^2 ));
 
 % Maak een interpolatiefunctie van output_noise_amplifier_2 afhankelijk van frequentie
 output_noise_func = @(f) interp1(frequentie, output_noise_rc, f, 'linear');
@@ -109,12 +109,13 @@ output_noise_func = @(f) interp1(frequentie, output_noise_rc, f, 'linear');
 Ruis_vermogen = integral(output_noise_func, 0.1, f_high);
 SNR_versterker = 20 * log10(voltage_sensor/Ruis_vermogen);
 
-disp(['Spanning van de uitgang sensor ', num2str(voltage_sensor), ' V']);
+disp(['Spanningsbereik van de uitgang sensor ', num2str(voltage_sensor), ' V']);
+disp(["Spanning van de temperatuur:" num2str(voltage_sensor/600), "V / 0.1 graden Celcius"]);
 disp(['Spanning resulotie van de bits ', num2str(bit_resolution), ' V']);
 disp(['Totale spannings ruis integreed over de bandbreedte: ', num2str(Ruis_vermogen), ' V']);
 disp(['SNR van het totale systeem: ', num2str(SNR_versterker), ' dB']);
 
-loglog(frequentie, output_noise_amplifier);
+loglog(frequentie, output_noise_rc);
 hold on
 %loglog(frequentie, total_voltage_noise_input);
 %hold on
