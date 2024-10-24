@@ -1,0 +1,90 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.17 Chrome/128.0.6613.36 Electron/32.0.1 Safari/537.36" version="24.7.17">
+  <diagram name="Page-1" id="lsHwk2eEBzXxNzpV8WPQ">
+    <mxGraphModel dx="1436" dy="968" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="SbQ5RRD_ZlLm4CBytA5v-11" value="?" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="SbQ5RRD_ZlLm4CBytA5v-1" target="SbQ5RRD_ZlLm4CBytA5v-5" edge="1">
+          <mxGeometry y="10" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SbQ5RRD_ZlLm4CBytA5v-1" value="Temperatuur Sensor" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="10" y="320" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4M2LYxtSo27J075L_vsk-1" value="Bits" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="SbQ5RRD_ZlLm4CBytA5v-2" target="SbQ5RRD_ZlLm4CBytA5v-6" edge="1">
+          <mxGeometry x="-0.04" y="-20" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="230" y="470" />
+              <mxPoint x="230" y="420" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SbQ5RRD_ZlLm4CBytA5v-2" value="Relatieve luchtvochtigheid sensor" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="10" y="440" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="SbQ5RRD_ZlLm4CBytA5v-14" value="Spanning" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="SbQ5RRD_ZlLm4CBytA5v-5" target="SbQ5RRD_ZlLm4CBytA5v-6" edge="1">
+          <mxGeometry x="-0.3333" y="30" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="310" y="350" />
+              <mxPoint x="310" y="400" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SbQ5RRD_ZlLm4CBytA5v-5" value="Signaal bewerking" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="170" y="320" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="SbQ5RRD_ZlLm4CBytA5v-8" value="Spanning" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="SbQ5RRD_ZlLm4CBytA5v-6" target="SbQ5RRD_ZlLm4CBytA5v-7" edge="1">
+          <mxGeometry y="10" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SbQ5RRD_ZlLm4CBytA5v-6" value="Signaal bewerking" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="330" y="380" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="SbQ5RRD_ZlLm4CBytA5v-10" value="RF-signaal" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="SbQ5RRD_ZlLm4CBytA5v-7" target="SbQ5RRD_ZlLm4CBytA5v-9" edge="1">
+          <mxGeometry y="10" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SbQ5RRD_ZlLm4CBytA5v-7" value="Zend module" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="520" y="380" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="SbQ5RRD_ZlLm4CBytA5v-9" value="Ontvangst module" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="710" y="380" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4M2LYxtSo27J075L_vsk-3" value="Vermogen" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="4M2LYxtSo27J075L_vsk-2" target="SbQ5RRD_ZlLm4CBytA5v-6" edge="1">
+          <mxGeometry y="30" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4M2LYxtSo27J075L_vsk-4" value="Vermogen" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="4M2LYxtSo27J075L_vsk-2" target="SbQ5RRD_ZlLm4CBytA5v-7" edge="1">
+          <mxGeometry x="-0.5" y="10" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4M2LYxtSo27J075L_vsk-5" value="Vermogen" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="4M2LYxtSo27J075L_vsk-2" target="SbQ5RRD_ZlLm4CBytA5v-5" edge="1">
+          <mxGeometry x="-0.4444" y="10" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="230" y="240" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4M2LYxtSo27J075L_vsk-6" value="Vermogen" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="4M2LYxtSo27J075L_vsk-2" target="SbQ5RRD_ZlLm4CBytA5v-1" edge="1">
+          <mxGeometry x="-0.2778" y="-10" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="70" y="220" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4M2LYxtSo27J075L_vsk-2" value="DC voeding" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="330" y="200" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
