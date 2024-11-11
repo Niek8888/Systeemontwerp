@@ -1,0 +1,36 @@
+\babel@toc {dutch}{}\relax 
+\contentsline {section}{\numberline {1}Applicatie beschrijving}{4}{section.1}%
+\contentsline {section}{\numberline {2}Theoretisch kader}{4}{section.2}%
+\contentsline {section}{\numberline {3}Specificaties}{5}{section.3}%
+\contentsline {section}{\numberline {4}Systeem niveau}{6}{section.4}%
+\contentsline {section}{\numberline {5}Blokschema niveau}{10}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Temperatuur sensor}{10}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Signaal bewerking}{10}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Relatieve luchtvochtigheid sensor}{11}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Zend module}{11}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}Energie verdeling}{11}{subsection.5.5}%
+\contentsline {subsection}{\numberline {5.6}flowchart}{12}{subsection.5.6}%
+\contentsline {subsection}{\numberline {5.7}Vereenvoudigen van blokschema}{13}{subsection.5.7}%
+\contentsline {section}{\numberline {6}Circuitniveau}{15}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Temperatuur sensor}{15}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Signaal versterking}{17}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}ADC}{17}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}Digitale bewerking}{18}{subsection.6.4}%
+\contentsline {subsection}{\numberline {6.5}DAC}{18}{subsection.6.5}%
+\contentsline {subsection}{\numberline {6.6}Zender}{18}{subsection.6.6}%
+\contentsline {section}{\numberline {7}Componentenniveau}{19}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Temperatuur sensor}{19}{subsection.7.1}%
+\contentsline {subsubsection}{\numberline {7.1.1}Ruis berekening van de Stroombron}{21}{subsubsection.7.1.1}%
+\contentsline {subsection}{\numberline {7.2}Luchtvochtigheid sensor}{23}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Digitale bewerking}{23}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.4}Instrumentatie versterker}{23}{subsection.7.4}%
+\contentsline {subsubsection}{\numberline {7.4.1}Ruis berekeningen van de Instrumentatie versterker}{26}{subsubsection.7.4.1}%
+\contentsline {subsection}{\numberline {7.5}Anti aliasing filter}{27}{subsection.7.5}%
+\contentsline {subsection}{\numberline {7.6}Zender}{29}{subsection.7.6}%
+\contentsline {section}{\numberline {8}Validatie en kalibratie}{30}{section.8}%
+\contentsline {section}{\numberline {9}EMC}{31}{section.9}%
+\contentsline {section}{\numberline {10}Bijlage}{34}{section.10}%
+\contentsline {subsection}{\numberline {10.1}Ruis berekeningen voor de temperatuur sensor}{34}{subsection.10.1}%
+\contentsline {subsection}{\numberline {10.2}Ruis berekeningen voor de Stroombron}{38}{subsection.10.2}%
+\contentsline {section}{List of Figuren}{40}{lstnumber.2.55}%
+\contentsline {section}{List of Tabellen}{40}{section*.3}%

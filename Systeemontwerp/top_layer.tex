@@ -1,0 +1,30 @@
+\author{Niek Louwerse 500867102\\
+		Jochem Giesbers 500855098\\
+        Stijn Thoolen 500879500\\
+		}
+\title{Systeemontwerp}
+\date{\today}
+
+\input{template.tex}
+
+\begin{document}
+	\input{Titlepagina.tex}
+	\input{Inhoudsopgave.tex}
+	\input{applicatie_beschrijving.tex}
+	\input{specificatie_niveau.tex}
+	\input{Systeem_niveau.tex}
+	\input{Blokschema_niveau.tex}
+    \input{circuit_niveau.tex}
+    \input{component_niveau.tex}
+    \input{Validatie_en_Kalibratie.tex}
+    \input{EMC.tex}
+	\newpage
+	\bibliography{BibTex.bib}
+	\bibliographystyle{IEEEtran}
+    \input{Bijlage.tex}
+    \newpage
+	\addcontentsline{toc}{section}{List of Figuren}
+	\listoffigures
+	\addcontentsline{toc}{section}{List of Tabellen}
+	\listoftables
+\end{document}

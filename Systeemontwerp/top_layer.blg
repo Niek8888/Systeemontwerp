@@ -1,0 +1,65 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: top_layer.aux
+Reallocating 'name_of_file' (item size: 1) to 11 items.
+Reallocating 'name_of_file' (item size: 1) to 9 items.
+The style file: IEEEtran.bst
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 6000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Database file #1: BibTex.bib
+-- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
+-- http://www.michaelshell.org/tex/ieeetran/bibtex/
+-- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+Warning--empty journal in RS_temp_sensor
+Warning--empty journal in Pt1000
+Warning--empty journal in measure_tabel
+Warning--empty journal in Spannings_ref
+Warning--empty journal in MCP6002
+Warning--empty journal in B547
+
+Done.
+You've used 15 entries,
+            4087 wiz_defined-function locations,
+            890 strings with 9682 characters,
+and the built_in function-call counts, 4506 in all, are:
+= -- 309
+> -- 33
+< -- 0
++ -- 21
+- -- 6
+* -- 160
+:= -- 853
+add.period$ -- 21
+call.type$ -- 15
+change.case$ -- 15
+chr.to.int$ -- 0
+cite$ -- 21
+duplicate$ -- 396
+empty$ -- 466
+format.name$ -- 6
+if$ -- 963
+int.to.chr$ -- 0
+int.to.str$ -- 15
+missing$ -- 84
+newline$ -- 98
+num.names$ -- 6
+pop$ -- 300
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 2
+skip$ -- 332
+stack$ -- 0
+substring$ -- 6
+swap$ -- 174
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 5
+type$ -- 15
+warning$ -- 6
+while$ -- 6
+width$ -- 17
+write$ -- 154
+(There were 6 warnings)
