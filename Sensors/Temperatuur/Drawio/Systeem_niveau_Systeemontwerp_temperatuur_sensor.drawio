@@ -1,1 +1,33 @@
-<mxfile host="Electron" modified="2024-10-14T09:52:40.552Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/20.7.4 Chrome/106.0.5249.199 Electron/21.3.3 Safari/537.36" etag="TqvgNyFbkLB6PplteNGi" version="20.7.4" type="device"><diagram id="OKJpiOtIxh4kbWfzo8p2" name="Pagina-1">zVZRb5swEP41edxkTEjSxy2knbpVmpStWx8tuIAn4JAxSdivnwlHwLCwtWq7vSDuu/Nhf993FjN3nR5vlMjjOwwhmXEWHmeuP+PcWzjmWQNVA7jLRQNESoYN5HTAVv4EAhmhpQyhsAo1YqJlboMBZhkE2sKEUniwy3aY2F/NRQQjYBuIZIx+k6GOCXUWV13iA8gopk+v+LJJpKItppMUsQjx0IPczcxdK0TdvKXHNSQ1dy0vzbrrC9nzxhRk+m8WXDkf5a3v3l/f7W95WQSrr972DW12L5KSDkyb1VXLAISGEApR6RgjzESy6dD3CssshPozzERdzSfE3ICOAX+A1hWpK0qNBop1mlB2h5mmpOOZeHw0Om2BpQpg4jxUV++5t5AIuQFMQavKFJAbW20UJELLva25IOtE52XnTp9Rmp1xRi5frqhPa/I5s1tooSLQtKqvUduoLcTdrgCrxrz0dt5BJ3UfobQzUvoLpDkooctS1dRCVqAaqW9re4ilhm0uThoczMBf1JGzKR33oDQcJxWi7HxuU8tbqg/dNHJGWNwbRIezyzJa5D6Wyfk0k8PxycJ39T1koiARRSEDmzOb4OEkGOJU9Z2Sp+ChDt6ec/6xn/Qrii4y3zjx+SeoJ4f3GzW85xk0l/1h0JoLYmLQWlsNGvHl/zexq5HPfNOI3SOEMotezGidtx4sa/1jo3mvajRvcO04qycazVsMHOu9ptFM2P1gNOXdX5q7+QU=</diagram></mxfile>
+<mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.17 Chrome/128.0.6613.36 Electron/32.0.1 Safari/537.36" version="24.7.17">
+  <diagram id="OKJpiOtIxh4kbWfzo8p2" name="Pagina-1">
+    <mxGraphModel dx="1221" dy="823" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="91KiJD3VFMvJ2usc8U5S-7" value="elektronische grootheid" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=15;" parent="1" source="91KiJD3VFMvJ2usc8U5S-1" edge="1">
+          <mxGeometry x="0.2903" y="20" relative="1" as="geometry">
+            <mxPoint x="780" y="340" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="91KiJD3VFMvJ2usc8U5S-1" value="Temperatuur sensor" style="rounded=0;whiteSpace=wrap;html=1;fontSize=20;" parent="1" vertex="1">
+          <mxGeometry x="440" y="280" width="200" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="91KiJD3VFMvJ2usc8U5S-4" value="Temperatuur" style="endArrow=classic;html=1;rounded=0;fontSize=15;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" target="91KiJD3VFMvJ2usc8U5S-1" edge="1">
+          <mxGeometry y="20" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="300" y="340" as="sourcePoint" />
+            <mxPoint x="400" y="270" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="91KiJD3VFMvJ2usc8U5S-8" value="DC Voeding" style="endArrow=classic;html=1;rounded=0;fontSize=15;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" target="91KiJD3VFMvJ2usc8U5S-1" edge="1">
+          <mxGeometry y="50" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="540" y="180" as="sourcePoint" />
+            <mxPoint x="560" y="350" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

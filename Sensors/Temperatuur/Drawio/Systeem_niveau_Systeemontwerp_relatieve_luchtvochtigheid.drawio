@@ -1,1 +1,33 @@
-<mxfile host="Electron" modified="2024-10-14T09:47:48.183Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/20.7.4 Chrome/106.0.5249.199 Electron/21.3.3 Safari/537.36" version="20.7.4" etag="dkcW9aovSk6R6scugTxQ" type="device"><diagram id="OKJpiOtIxh4kbWfzo8p2" name="Pagina-1">zVZdc5swEPw1fmwHhMH2Y2M77aTNTKeepsmjAmdQR3AeIWzor+9hxIdM7SaZNu0LcHvSSdrd0zDxlmn5XvFdcosRyAlzonLirSaMBTOHnjVQNcB0umiAWImogdwe2IgfYEAzLy5EBLk1UCNKLXY2GGKWQagtjCuFB3vYFqW96o7HMAI2IZdj9JuIdGJQN1j0iQ8g4sQsPWezJpHydrA5SZ7wCA8DyFtPvKVC1M1XWi5B1ty1vDTzrs9ku40pyPRTJizcj+Jm5d1d3+5vWJGH86/+5o3Z7J7LwhzYbFZXLQMQESEmRKUTjDHjct2jVwqLLIJ6GYeifswnxB2BLoHfQevKqMsLjQQlOpUmu8VMm6TrU9zsoV747FkNlGOhQrhwQLdjmhwKmIJWFc2rbJcpkFyLvb0cN9aJu2ldpc8oaCPMMS6fzU0dU9abOnYJzVUM2swaatQWagfidpuDNYY+BjvvoaO6z1DaHSn95XhooFMzRxZhovdID7IyUCGiFrIc1cgOttiHRGjY7PhRgwPdAGeFZU4n7B6UhvKytGPJyvYCsblmLfeHvj2ZY7Bk0Jkuc87rarH9XGqnl6gNJK1/9UhEBrE+UhDwtKYpe8zr15j50/7Lonf1RUZRKHmei9Dm2BbktJWIVVXdm+QxeKiDt11uVQ6Tq8pET2/BxtsvbkE2ls//hXr+n+lUz/lNpzYXyoVObW14UojN/r+Wn498uaJCzh1CJLL4rxmt99aDZa1/bDT/VY3mn1xT7vyFRvODE8f6r2k0Cvs/lGZ4/5vnrX8C</diagram></mxfile>
+<mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.17 Chrome/128.0.6613.36 Electron/32.0.1 Safari/537.36" version="24.7.17">
+  <diagram id="OKJpiOtIxh4kbWfzo8p2" name="Pagina-1">
+    <mxGraphModel dx="698" dy="470" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="91KiJD3VFMvJ2usc8U5S-7" value="Bits" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=15;" parent="1" source="91KiJD3VFMvJ2usc8U5S-1" edge="1">
+          <mxGeometry x="-0.0037" y="-10" relative="1" as="geometry">
+            <mxPoint x="780" y="340" as="targetPoint" />
+            <mxPoint y="-20" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="91KiJD3VFMvJ2usc8U5S-1" value="Relatieve luchtvochtigheid sensor" style="rounded=0;whiteSpace=wrap;html=1;fontSize=20;" parent="1" vertex="1">
+          <mxGeometry x="440" y="280" width="200" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="91KiJD3VFMvJ2usc8U5S-4" value="Relatieve&lt;br&gt;&amp;nbsp;luchtvochtigheid" style="endArrow=classic;html=1;rounded=0;fontSize=15;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" target="91KiJD3VFMvJ2usc8U5S-1" edge="1">
+          <mxGeometry y="20" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="300" y="340" as="sourcePoint" />
+            <mxPoint x="400" y="270" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="91KiJD3VFMvJ2usc8U5S-8" value="DC Voeding" style="endArrow=classic;html=1;rounded=0;fontSize=15;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" target="91KiJD3VFMvJ2usc8U5S-1" edge="1">
+          <mxGeometry y="50" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="540" y="180" as="sourcePoint" />
+            <mxPoint x="560" y="350" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

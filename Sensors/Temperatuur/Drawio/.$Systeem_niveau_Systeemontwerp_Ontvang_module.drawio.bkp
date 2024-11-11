@@ -4,8 +4,8 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="91KiJD3VFMvJ2usc8U5S-7" value="Spanning / Stroom / Bits" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=15;" parent="1" source="91KiJD3VFMvJ2usc8U5S-1" edge="1">
-          <mxGeometry x="0.2903" y="20" relative="1" as="geometry">
+        <mxCell id="91KiJD3VFMvJ2usc8U5S-7" value="Spanning / Stroom" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=15;" parent="1" source="91KiJD3VFMvJ2usc8U5S-1" edge="1">
+          <mxGeometry y="20" relative="1" as="geometry">
             <mxPoint x="780" y="340" as="targetPoint" />
             <mxPoint as="offset" />
           </mxGeometry>
