@@ -1,5 +1,5 @@
 \newpage
-\section{Systeem niveau}
+\section{Systeemniveau}
 \label{Systeem_niveau}
 De applicatie wordt gerepresenteerd als een black box. Dit is weergegeven in Figuur \ref{black_box} met de specificatie weergegeven in Tabel \ref{tab:Systeem_black_box}.
 \\
@@ -7,7 +7,7 @@ De applicatie wordt gerepresenteerd als een black box. Dit is weergegeven in Fig
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\linewidth]{pictures/Systeem_niveau_Systeemontwerp.drawio.pdf}
-    \caption{Systeem ontwerp}
+    \caption{Systeemontwerp}
     \label{black_box}
 \end{figure}
 \begin{table}[H]
@@ -36,11 +36,11 @@ De applicatie wordt gerepresenteerd als een black box. Dit is weergegeven in Fig
     \label{tab:Systeem_black_box}
 \end{table}
 
-Uit dit black box schema ontstaan de volgende subsystemen. Het eerste subsysteem is de temperatuur sensor die de temperatuur meet uit de omgeving. En dit omzetten naar een elektronische grootheid zoals is weergegeven in Figuur \ref{fig:temper_systeemontwerp_temp} en Tabel \ref{tab:systeem_temper_sub_system}. Dit subsysteem is niet mogelijk om uit te zetten, omdat anders de metingen inaccuraat worden. 
+Uit dit black box schema ontstaan de volgende subsystemen. Het eerste subsysteem is de temperatuursensor die de temperatuur meet uit de omgeving. En dit omzetten naar een elektronische grootheid zoals is weergegeven in Figuur \ref{fig:temper_systeemontwerp_temp} en Tabel \ref{tab:systeem_temper_sub_system}. Dit subsysteem is niet mogelijk om uit te zetten, omdat anders de metingen inaccuraat worden. 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.45\linewidth]{pictures/Systeem_niveau_Systeemontwerp_temperatuur_sensor.drawio.pdf}
-    \caption{Temperatuur sensor subsysteem.}
+    \caption{Temperatuursensor subsysteem.}
     \label{fig:temper_systeemontwerp_temp}
 \end{figure}
 \begin{table}[H]
@@ -66,7 +66,7 @@ Uit dit black box schema ontstaan de volgende subsystemen. Het eerste subsysteem
     \label{tab:systeem_temper_sub_system}
 \end{table}
 
-Het tweede subsysteem is de relatieve luchtvochtigheid sensor. Dit subsysteem zet de relatieve luchtvochtigheid uit de omgeving om naar een binaire waarde. Deze waarde kan dan met een data protocol uitgelezen worden. Deze informatie moet dan door een digitaal systeem verwerkt worden, zodat het door de volgende subsystemen in het systeem gebruikt kan worden. Doordat dit subsysteem digitaal werkt, is het mogelijk om het systeem in rust stand of zelfs uit te zetten. Dit kan ervoor zorgen dat de energie van het subsysteem naar benenden gaat en er door andere subsystemen meer vermogen gebruikt kan worden. Het subsysteem is weergegeven in Figuur \ref{fig:systeem_relative_hum_sub_system} en Tabel \ref{tab:systeem_rel_hum_sub_system}.
+Het tweede subsysteem is de relatieve luchtvochtigheidssensor. Dit subsysteem zet de relatieve luchtvochtigheid uit de omgeving om naar een binaire waarde. Deze waarde kan dan met een data protocol uitgelezen worden. Deze informatie moet dan door een digitaal systeem verwerkt worden, zodat het door de volgende subsystemen in het systeem gebruikt kan worden. Doordat dit subsysteem digitaal werkt, is het mogelijk om het systeem in ruststand of zelfs uit te zetten. Dit kan ervoor zorgen dat het energieverbruik van het subsysteem gemiddeld lager uit kan komen en door andere subsystemen meer vermogen verbruikt kan worden. Het subsysteem is weergegeven in Figuur \ref{fig:systeem_relative_hum_sub_system} en Tabel \ref{tab:systeem_rel_hum_sub_system}.
 
 \begin{figure}[H]
     \centering
@@ -76,7 +76,7 @@ Het tweede subsysteem is de relatieve luchtvochtigheid sensor. Dit subsysteem ze
 \end{figure}
 \begin{table}[H]
     \centering
-    \caption{Specificaties van Relatieve luchtvochtigheid sensor subsysteem}
+    \caption{Specificaties van Relatieve luchtvochtigheidssensor subsysteem}
     \begin{tabular}{|c|c|}
         \hline
         \textbf{Module} & \textbf{Relatieve luchtvochtigheid Sensor} \\
@@ -97,12 +97,12 @@ Het tweede subsysteem is de relatieve luchtvochtigheid sensor. Dit subsysteem ze
     \label{tab:systeem_rel_hum_sub_system}
 \end{table}
 
-Het derde subsysteem is het signaal bewerking systeem. Dit subsysteem is nodig om de output van de sensoren verder te verwerken naar informatie die gebruikt kan worden door andere subsystemen. Dit systeem kan uitgezet worden als er geen meetingen gedaan hoeven te worden. Dit wordt met het belang van energie besparing gedaan. Dit subsysteem is weergegeven in Figuur \ref{fig:signaal_bewerking_subsysteem} en Tabel \ref{tab:systeem_signaal_bewerking_sub_system}.
+Het derde subsysteem is het signaalbewerkingssysteem. Dit subsysteem is nodig om de output van de sensoren verder te verwerken naar informatie die gebruikt kan worden door andere subsystemen. Dit systeem kan uitgezet worden als er geen metingen gedaan hoeven te worden. Dit wordt met het belang van energie besparing gedaan. Dit subsysteem is weergegeven in Figuur \ref{fig:signaal_bewerking_subsysteem} en Tabel \ref{tab:systeem_signaal_bewerking_sub_system}.
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.45\linewidth]{pictures/Systeem_niveau_Systeemontwerp_Signaal_bewerking.drawio.pdf}
-    \caption{Signaal bewerking subsysteem.}
+    \caption{Signaalbewerking subsysteem.}
     \label{fig:signaal_bewerking_subsysteem}
 \end{figure}
 \begin{table}[H]
@@ -130,7 +130,7 @@ Het derde subsysteem is het signaal bewerking systeem. Dit subsysteem is nodig o
     \label{tab:systeem_signaal_bewerking_sub_system}
 \end{table}
 
-Het vierde subsysteem is het Zend module subsysteem. Dit subsysteem is nodig om de informatie draadloos te versturen naar het basisstation waar alle informatie verzameld wordt. Om energie te besparen en niet constant data te versturen is het nodig dat dit subsysteem uitgezet kan worden. Dit is subsysteem is weergegeven in Figuur \ref{fig:zend_module_subsysteem} en Tabel \ref{tab:zend_module_subsysteem}.
+Het vierde subsysteem is de Zendmodule subsysteem. Dit subsysteem is nodig om de informatie draadloos te versturen naar het basisstation waar alle informatie verzameld wordt. Om energie te besparen en niet constant data te versturen is het nodig dat dit subsysteem uitgezet kan worden. Dit is subsysteem is weergegeven in Figuur \ref{fig:zend_module_subsysteem} en Tabel \ref{tab:zend_module_subsysteem}.
 
 \begin{figure}[H]
     \centering
@@ -162,7 +162,7 @@ Het vierde subsysteem is het Zend module subsysteem. Dit subsysteem is nodig om 
     \label{tab:zend_module_subsysteem}
 \end{table}
 
-Het vijfde subsysteem is de ontvangst module. Dit subsysteem is nodig om de informatie van de zendmodule te ontvangen en te kunnen omvormen naar informatie die het basisstation kan begrijpen. Dit subsysteem is weergegeven in Figuur \ref{fig:ontvang_module_subsysteem} en Tabel \ref{tab:ontvang_module_subsysteem}.
+Het vijfde subsysteem is de ontvangst module. Dit subsysteem is nodig om de informatie van de zendmodule te ontvangen en te kunnen omvormen naar informatie die het basisstation kan verwerken. Dit subsysteem is weergegeven in Figuur \ref{fig:ontvang_module_subsysteem} en Tabel \ref{tab:ontvang_module_subsysteem}.
 
 \begin{figure}[H]
     \centering

@@ -10,23 +10,28 @@ Met de subsystemen kan nu een blokschema ontworpen worden. Dit blokschema is wee
     \label{fig:Blok_schema_1_top_level}
 \end{figure}
 
-\subsection{Temperatuur sensor}
-Zoals is beschreven in paragraaf \ref{Systeem_niveau}: Systeem niveau, is het niet mogelijk om de sensor uit te kunnen schakelen. Hierdoor is het nodig dat er goed nagedacht wordt over hoe de temperatuur sensor zo energie zuinig mogelijk ontworpen wordt. Het type sensor en de aansturing daarvan spelen een grote rol hierin. Dit wordt allemaal beschreven in paragraaf \ref{Circuit_niveau}: Circuit niveau. Daarom is er besloten dat de Temperatuur sensor maximaal 1 mW mag verbruiken. Daarnaast moet de Temperatuur Sensor een minimale SNR hebben van 60 dB. Dit is zodat de informatie van de sensor niet verdwijnt in de ruis.
+\subsection{Temperatuursensor}
+Zoals is beschreven in hoofdstuk \ref{Systeem_niveau}: Systeem niveau, is het niet mogelijk om de sensor uit te schakelen. Hierdoor is het nodig dat er goed nagedacht wordt over hoe de temperatuur sensor zo energiezuinig mogelijk ontworpen wordt. Het type sensor en de aansturing daarvan spelen een grote rol hierin. Dit wordt allemaal beschreven in hoofdstuk \ref{Circuit_niveau}: Circuit niveau. Hierdoor is het nog niet mogelijk om een berekening te doen van het vermogensverbruik. Daarom is er voor nu besloten dat de temperatuursensor maximaal 1 mW mag verbruiken. Dit is gedaan om de rest van de applicatie zo veel mogelijk van het vermogensbudget te geven. Voor de nauwkeurigheid van de sensor zijn er minimaal 600 meet stappen nodig. Dit betekent dus dat de ruis minimaal kleiner moet zijn dan 1/600ste van het maximale bereik van de sensor. Anders kan de sensor de specificaties niet behalen. Om van Piek ruis naar effectieve ruis te gaan wordt er gedeeld met een factor 6. Hierom is er besloten dat de ruis maximaal 1/3600ste van de sensors maximale bereik. Met deze eis is er een minimale SNR van 71,1 dB nodig. 
 
-\subsection{Signaal bewerking}
-De uitgang van de temperatuur sensor kan niet direct uitgelezen worden door het digitale signaalbewerkingsblok. Hiervoor moet eerst het signaal versterkt worden door een Signaal bewerkingsblok. De versterking hangt af van de signalen die het digitale Signaal bewerkingsblok kan verwerken. Om de applicatie energie zuinig te houden mag dit Signaal bewerkingsblok 1 mW gebruiken om ervoor te zorgen dat de zend module zoveel mogelijk heeft om informatie goed te verzenden. Om dit te bereiken is misschien nodig om dit blok uit en aan te kunnen schakelen. Hierom moet er rekening mee gehouden in de verdere ontwerp stappen.
+In de specificaties is vast gesteld dat er minimaal elke tien seconden één meting plaats moet vinden. Dit zorgt voor een bandbreedte van minimale 0,1 Hz. Omdat
+
+
+Omdat uit de specificaties is bepaald dat er minimaal één meting elke 10 seconden gedaan moet worden 
+
+\subsection{Signaalbewerking}
+De uitgang van de temperatuursensor kan niet direct uitgelezen worden door het digitale signaalbewerkingsblok. Hiervoor moet eerst het signaal versterkt worden door een Signaal bewerkingsblok. De versterking hangt af van de signalen die het digitale Signaal bewerkingsblok kan verwerken. Om de applicatie energiezuinig te houden mag dit Signaal bewerkingsblok 1 mW gebruiken om ervoor te zorgen dat de zend module zoveel mogelijk heeft om informatie goed te verzenden. Om dit te bereiken is misschien nodig om dit blok uit en aan te kunnen schakelen. Hierom moet er rekening mee gehouden in de verdere ontwerpstappen.
 \\
 \newline
-Het tweede Signaal bewerkingsblok heeft twee inputs. Deze inputs worden gebruikt om de absolute luchtvochtigheid te berekenen. Om dit efficiënt te doen vindt deze berekening plaats in het digitale domein. Deze informatie wordt dan omgevormd naar een analoog signaal om de zendmodule mee aan te sturen. Om de energie verbruik te bepalen wordt er rekening gehouden met een verbruik van 2 mW.
+Het signaalbewerkingsblok dat is aangesloten op de relatieve luchtvochtigheidssensor en het hierboven vermelde signaalbewerkingsblok. Heeft twee ingangen waarvan één digitaal is en de andere een analoog signaal is. Hierdoor moet dit blok in het digitale domein te werk gaan. Omdat dit in het digitale domein plaatsvindt, is het mogelijk om eenvoudig de absolute luchtvochtigheid te berekenen. Nadat deze berekening is gebeurd wordt deze informatie omgevormd naar een analoog signaal om de zendmodule hiermee aan te sturen. Door twee omvormingen die in het signaalbewerkingsblok plaats vinden is er bepaald dat er 2 mW aan energie verbruik nodig is om dit te doen.
 
-\subsection{Relatieve luchtvochtigheid sensor}
-Zoals is beschreven in paragraaf \ref{Systeem_niveau}: Systeem niveau, is dit een blok met een digitale uitgang. Dit zorgt ervoor dat er in applicatie een digitale chip moet zijn om de informatie van de Relatieve luchtvochtigheid Sensor uit te lezen en te kunnen verwerken. Het verbruik en nauwkeurigheid zijn de belangrijkste eigenschappen voor de sensor keuze.
+\subsection{Relatieve luchtvochtigheid sensor} 
+Zoals is beschreven in hoofdstuk \ref{Systeem_niveau}: Systeem niveau, is dit een blok met een digitale uitgang. Dit zorgt ervoor dat er in applicatie een digitale chip moet zijn om de informatie van de Relatieve luchtvochtigheid Sensor uit te lezen en te kunnen verwerken. Het verbruik en nauwkeurigheid zijn de belangrijkste eigenschappen voor de sensor keuze.
 
-\subsection{Zend module}
-Het zendmodule blok verwerkt de signalen die hij binnen krijgt naar een RF-signaal. Dit RF-signaal wordt via een antenne verstuurd naar de Ontvangst module. De frequentie waarop de zendmodule zijn informatie verstuurd zal gebeuren op een openbare band \cite{RF_banden}. Dit zorgt ervoor dat er geen zendlicentie nodig is om de applicatie te gebruiken. De energie verbruik van de applicatie mag niet boven de 10 mW uit komen. Om dit te voorkomen wordt gedoeld op een energie verbruik van 5 mW voor het zend module blok.
+\subsection{Zendmodule}
+Het zendmodule blok verwerkt de signalen die hij binnen krijgt naar een RF-signaal. Dit RF-signaal wordt via een antenne verstuurd naar de Ontvangst module. De frequentie waarop de zendmodule zijn informatie verstuurd zal gebeuren op een openbare band \cite{RF_banden}. Dit zorgt ervoor dat er geen zendlicentie nodig is om de applicatie te gebruiken. Het energieverbruik van de applicatie mag niet boven de 10 mW uit komen. Om dit te voorkomen wordt gedoeld op een energie verbruik van 5 mW voor het zend module blok.
 
-\subsection{Energie verdeling}
-Het vermogen is nu als volgt, verdeelt onder de Blokken van het blokschema. Dit is zichtbaar in Tabel \ref{tab:Energie_verbruik_blok_schema}.
+\subsection{Energieverdeling}
+Het vermogen is nu als volgt, verdeeld over de blokken van het blokschema. Dit is zichtbaar in Tabel \ref{tab:Energie_verbruik_blok_schema}.
 \begin{table}[H]
     \centering
     \begin{tabular}{|c|c|}
@@ -45,7 +50,7 @@ Het vermogen is nu als volgt, verdeelt onder de Blokken van het blokschema. Dit 
 \end{table}
 
 \newpage
-\subsection{flowchart}
+\subsection{flowchart}  % voor jochem
 Om de programmastructuur voor de digitale verwerking inzichtelijk te maken en om het systeem zo efficiënt mogelijk te ontwerpen is een flow chart gemaakt, te zien in Figuur \ref{fig:flow_chart}.
 \newline
 \begin{figure}[H]
@@ -59,7 +64,7 @@ Tijdens de start procedure zullen de digitale systemen correct ingesteld worden 
 
 
 \subsection{Vereenvoudigen van blokschema}
-Het blokschema wat ontworpen is uit de subsystemen is nog niet ver genoeg opgedeeld. Dit zorgt ervoor dat er nieuwe blok schema ontworpen moet worden wat gebaseerd is op het eerste schema, maar dan uit meer basis functies bestaat om het ontwerpen van het circuit in Paragraaf \ref{Circuit_niveau}: Circuit Niveau makkelijker en duidelijker te maken. Dit blok schema is weergegeven in Figuur \ref{fig:bigger_blok_schematic}. Het blok ADC is de analoog naar digitaal conversie waarin gezorgd wordt dat het analoog signaal verder bewerkt kan worden door de digitale bewerking. Daarnaast is er het blok DAC waarin de conversie van digitaal naar analoog in plaats vindt, zodat de zender het signaal kan begrijpen.
+Het blokschema wat ontworpen is uit de subsystemen is nog niet ver genoeg opgedeeld. Dit zorgt ervoor dat er een nieuw blokschema ontworpen moet worden wat gebaseerd is op het eerste schema, maar dan uit meer basisfuncties bestaat om het ontwerpen van het circuit in hoofdstuk \ref{Circuit_niveau}: Circuitniveau makkelijker en duidelijker te maken. Dit blokschema is weergegeven in Figuur \ref{fig:bigger_blok_schematic}. Het blok ADC is de analoog naar digitaal conversie waarin gezorgd wordt dat het analoog signaal verder bewerkt kan worden door de digitale bewerking. Daarnaast is er het blok DAC waarin de conversie van digitaal naar analoog in plaats vindt, zodat de zender het signaal kan begrijpen.
 
 \begin{figure}[H]
     \centering

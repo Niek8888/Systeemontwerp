@@ -34,6 +34,11 @@ Dit is de ideale kantoortemperatuur werk \& veiligheid - kennisplatform over
   \url{https://www.werkenveiligheid.nl/preventie/de-praktijk/dit-de-ideale-kantoortemperatuur}
 \BIBentrySTDinterwordspacing
 
+\bibitem{Wang2008}
+J.~Wang, Y.~Jing, and C.~Zhang, ``Robust cascade control system design for
+  central airconditioning system,'' \emph{Proceedings of the World Congress on
+  Intelligent Control and Automation (WCICA)}, pp. 1506--1511, 2008.
+
 \bibitem{NEN1824}
 \BIBentryALTinterwordspacing
 Alle ins en outs van wetgeving en normen. [Online]. Available:
@@ -51,6 +56,12 @@ wetten.nl - regeling - regeling gebruik van frequentieruimte zonder vergunning
 \BIBentryALTinterwordspacing
 RS, ``Thermocouple selection guide,'' 2024. [Online]. Available:
   \url{https://assets.rs-online.com/image/upload/v1563475663/MKT/LP/Suppliers/rspro/thermocouples/RS-Pro-Thermocouple-Selection-Guide.pdf}
+\BIBentrySTDinterwordspacing
+
+\bibitem{Titanium_temp_co}
+\BIBentryALTinterwordspacing
+Ness engineering tech data - metal / alloy resistivity. [Online]. Available:
+  \url{https://www.nessengr.com/techdata/metalresis.html}
 \BIBentrySTDinterwordspacing
 
 \bibitem{Instrumentatie_versterker_schematic}
@@ -94,8 +105,8 @@ M.~T. Inc., ``Mcp6001/1r/1u/2/4 features,'' 2020. [Online]. Available:
 
 \bibitem{B547}
 \BIBentryALTinterwordspacing
-onsemi, ``Your feedback is important to us! help us improve-take the survey,''
-  2024. [Online]. Available: \url{www.onsemi.com}
+onsemi, ``Bc546b, bc547a, b, c, bc548b, c,'' 2005. [Online]. Available:
+  \url{https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/2522/BC546%2C%20547%2C%20548%20Rev5.pdf}
 \BIBentrySTDinterwordspacing
 
 \bibitem{AD8220}

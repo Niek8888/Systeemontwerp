@@ -1,12 +1,17 @@
-\newpage
 \section{Specificaties}
 De applicatie die ontworpen wordt aan de volgende Specificatie gesteld.
 \begin{itemize}
-    \item \textbf{De modules die informatie over omgeving halen mogen niet meer dan 10 mW gemiddeld verbruiken.} Deze eis komt vanuit de opdrachtgever.
-    \item \textbf{De applicatie meet de temperatuur met een nauwkeurigheid van $\pm$ 0.1 $^\circ\text{C}$ in een meetbereik van -5 tot 55 graden $^\circ\text{C}$.} Om accuraat de temperatuur van een kantoor ruimte in kaart te brengen wordt er gekozen voor deze parameters. De nauwkeurigheid en meetbereik is bepaald door de bronnen uit \ref{Theoretisch_kader}.
-    \item \textbf{De applicatie meet de relatieve luchtvochtigheid met een nauwkeurigheid van $\pm$ 2 \% in een meetbereik van 0 tot 100 \%.} Om accuraat de relatieve luchtvochtigheid van een kantoor ruimte in kaart te brengen wordt er gekozen voor deze parameters. De nauwkeurigheid en meetbereik is bepaald door de bronnen uit \ref{Theoretisch_kader}.
+    \item \textbf{De modules die informatie over de omgeving verzamelen mogen niet meer dan 10 mW gemiddeld verbruiken.} 
+    \\Deze eis komt vanuit de opdrachtgever.
+    \item \textbf{De applicatie meet de temperatuur met een nauwkeurigheid van $\pm$ 0.1 $^\circ\text{C}$ in een meetbereik van -5 tot 55 graden $^\circ\text{C}$.} 
+    \\Om accuraat de temperatuur van een kantoorruimte in kaart te brengen wordt er gekozen voor deze parameters. De nauwkeurigheid en meetbereik is bepaald door de eisen uit hoofdstuk \ref{Theoretisch_kader}: Theoretisch kader.
+    \item \textbf{De applicatie meet de relatieve luchtvochtigheid met een nauwkeurigheid van $\pm$ 2 \% in een meetbereik van 0 tot 100 \%.} 
+    \\Om accuraat de relatieve luchtvochtigheid van een kantoor ruimte in kaart te brengen wordt er gekozen voor deze parameters. De nauwkeurigheid en meetbereik is bepaald door de eisen uit hoofdstuk \ref{Theoretisch_kader}:Theoretisch kader.
     \item \textbf{De applicatie berekent de absolute luchtvochtigheid met een nauwkeurigheid van $\pm$ 0.02 g/kg.} Door het gebruik van de twee soorten sensoren is het mogelijk om de absolute luchtvochtigheid te berekenen.
-    \item \textbf{De applicatie kan data versturen over een minimale afstand van 20 meter draadloos.} De minimale kantoor ruimte is per persoon vast door de NEN1824 \cite{NEN1824}. Om hiermee rekening te houden het aantal kantoor ruimte per verdieping is het nodig om de minimale zend afstand vast te stellen op 20 meter zodat het systeem in meeste kantoor ruimte gebruikt kan worden.
-    \item \textbf{De applicatie zal uit een minimum van twee nodes bestaan die draadloos met elkaar communiceren.} Deze eis komt vanuit de opdrachtgever.
-    \item \textbf{De applicatie zal minimaal één meeting elke tien seconden doen.} Om ervoor te zorgen dat het ventilatie / airco-systeem genoeg informatie heeft om zichzelf bij te regelen. Is het nodig om minimaal één meeting te doen elke tien seconden. En deze dan draadloos te versturen naar het basisstation.
+    \item \textbf{De applicatie kan data versturen over een minimale afstand van 20 meter draadloos.} 
+    \\De minimale kantoorruimte is per persoon vast door de NEN1824 \cite{NEN1824}. Om ervoor te zorgen dat er niet meerder basisstation nodig zijn per verdieping. Is het nodig om de minimale zendafstand vast te stellen op 20 meter, zodat het systeem in meeste kantoorruimte gebruikte kan worden.
+    \item \textbf{De applicatie zal uit een minimum van twee nodes bestaan die draadloos met elkaar communiceren.} 
+    \\Deze eis komt vanuit de opdrachtgever.
+    \item \textbf{De applicatie zal minimaal elke tien seconden één meting doen.} 
+    \\Om ervoor te zorgen dat het ventilatie/ airco-systeem genoeg informatie heeft om zichzelf bij te regelen, is het nodig om minimaal elke tien seconden één meting te doen. Deze wordt vervolgens draadloos verstuurd naar het basisstation. De update frequentie is bepaald in hoofdstuk \ref{Theoretisch_kader}: Theoretisch kader.
 \end{itemize}

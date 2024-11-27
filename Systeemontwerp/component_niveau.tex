@@ -74,7 +74,7 @@ Om de nauwkeurigheid van de stroombron te kwantificeren, berekenen we hieronder 
     \item \textbf{Signaal ruis verhouding}
     Met de berekende stroomruis is het nu mogelijk om de SNR van de stroombron te berekenen. Dit is weergegeven in de volgende formule:
     \[
-    \text{SNR} = 20log(\frac{4,26 \cdot 10^{-5}}{1,9266 \cdot 10^{-9}} = 86.906\; \text{dB}
+    \text{SNR} = 20log(\frac{4,26 \cdot 10^{-5}}{1,9266 \cdot 10^{-9}}) = 86.906\; \text{dB}
     \]
 \end{enumerate}
 Nu berekend is dat de Stroombron voldoet aan de SNR-specificatie is het belangrijk om te berekenen hoeveel vermogen het systeem gaat gebruiken. Hiervoor wordt de informatie uit de datasheets gebruikt voor stroomverbruik. Dit is weergegeven in de volgende formule:
@@ -99,7 +99,7 @@ P_{\text{}} = 3,3 \cdot 150 \cdot 10^{-6} + 5 \cdot 350 \cdot 10^{-9} = 0,496 \;
 benodigdheden zijn: i2c voor uitlezen luchtvochtigheid, adc voor uitlezen temp sensor, gpio pin voor aansturen zender, gpio pin voor aan uit schakelen zender en versterker ivm stroom verbruik. sleep modus voor verlagen stroom verbruik.
 attiny1624, heeft alles en weinig extra, enige extra zijn een aantal communicatie protocollen als spi en uart, maar dat is bijna altijd als er een protocol als i2c nodig is.
 power down modus waarbij stroomverbruik enkele $\mu$A is. daarbij draait alleen nog de RTC op de ingebouwde 32 kHz oscillator, de rest staat allemaal uit. De RTC kan gebruikt worden om uit de power down modus te komen. In de Specificaties is aangeven dat er minimaal elke 10 seconde nieuwe data verstuurd moet worden. De RTC kan gebruikt worden om elke 8 seconde een interrupt te maken en er zo dus elke 8 seconde een meting gedaan kan worden.
-Voedingsspanning van 3.3 volt voor minder verbruik, goed voor 5MHz klok om zo snel mogelijk data te verwerken en te versturen en in verhouding zo lang mogelijk in de zuinige slaap modes te zijn. 
+%Voedingsspanning van 3.3 volt voor minder verbruik, goed voor 5MHz klok om zo snel mogelijk data te verwerken en te versturen en in verhouding zo lang mogelijk in de zuinige slaap modes te zijn. 
 
 
 
@@ -183,7 +183,7 @@ Uit de berekening blijkt dat de AD8226 zelfs beter presteert, dit komt doordat d
     \label{fig:spectral_ruis_plot}
 \end{figure}
 
-Door het verbruik van de AD8226 van 400 $\mu$A per opamp is het nodig om de versterkers uit te kunnen zetten. Om te voldoen aan de richtlijn van het energieverbruik die zijn opgesteld in de paragraaf \ref{Block_schema}: Blokschema niveau. Zonder de Versterkers uit te zetten wordt er een minimaal vermogen van 2 mW door de $I_{Quiescent}$. Dit kan beperkt worden een schakelaar in de voedingslijn te plaatsen die door de microcontroller bepaald kan worden. Dit zorgt ervoor dat de versterkers alleen aan staan als de er gemeten moet worden. Hierdoor is het mogelijk om het energieverbruik te verlagen van minimaal 2 mW naar 65 $\mu$W. Dit komt door dat de sensor lang in rust modus staat en maar heel kort data aan het verwerken is op de microcontroller. Deze schakelaar kan gerealiseerd worden door een N-channel mosfet te plaatsen in voedingslijn tussen GND en de minvoedingspin van de AD8226. Dit is weergegeven in Figuur \ref{fig:Instrumentatie_amp_schematic}.
+Door het verbruik van de AD8226 van 400 $\mu$A per opamp is het nodig om de versterkers uit te kunnen zetten. Om te voldoen aan de richtlijn van het energieverbruik die zijn opgesteld in de hoofdstuk \ref{Block_schema}: Blokschema niveau. Zonder de Versterkers uit te zetten wordt er een minimaal vermogen van 2 mW door de $I_{Quiescent}$. Dit kan beperkt worden een schakelaar in de voedingslijn te plaatsen die door de microcontroller bepaald kan worden. Dit zorgt ervoor dat de versterkers alleen aan staan als de er gemeten moet worden. Hierdoor is het mogelijk om het energieverbruik te verlagen van minimaal 2 mW naar 65 $\mu$W. Dit komt door dat de sensor lang in rust modus staat en maar heel kort data aan het verwerken is op de microcontroller. Deze schakelaar kan gerealiseerd worden door een N-channel mosfet te plaatsen in voedingslijn tussen GND en de minvoedingspin van de AD8226. Dit is weergegeven in Figuur \ref{fig:Instrumentatie_amp_schematic}.
 Met deze aanpassing is het vermogensverbruik onder de richtlijn en zorgt dit ervoor dat er meer vermogen ergens anders gebruikt kan worden. 
 \begin{figure}[H]
     \centering

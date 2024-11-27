@@ -1,10 +1,10 @@
 \newpage
 \section{Circuitniveau}
 \label{Circuit_niveau}
-Voor het ontwikkelen van de applicatie is het nodig om de blokken uit het vereenvoudigde blokschema uit te gaan werken. Dit process wordt besproken in dit hoofdstuk. Als eerste wordt er gekeken naar de Temperatuur sensor.
+Voor het ontwikkelen van de applicatie is het nodig om de blokken uit het vereenvoudigde blokschema uit te gaan werken. Dit process wordt besproken in dit hoofdstuk. Als eerste wordt er gekeken naar de temperatuursensor.
 
-\subsection{Temperatuur sensor}
-Voor het meten van Temperatuur zijn er verschillende typen soorten op de markt. Om de correcte keuze te maken is het nodig om dit te vergelijken. In Figuur \ref{fig:verschillende_temp_sensors} zijn de verschillende typen sensoren weergegeven die veel in de industriële sector gebruikt wordt.
+\subsection{Temperatuursensor}
+Voor het meten van temperatuur zijn er verschillende typen soorten op de markt. Om de correcte keuze te maken is het nodig om dit te vergelijken. In Figuur \ref{fig:verschillende_temp_sensors} zijn de verschillende typen sensoren weergegeven die veel in de industriële sector gebruikt wordt.
 
 \begin{figure}[H]
     \centering
@@ -13,7 +13,9 @@ Voor het meten van Temperatuur zijn er verschillende typen soorten op de markt. 
     \label{fig:verschillende_temp_sensors}
 \end{figure}
 
-De specificaties hebben een nauwkeurigheid van 0.1 $^\circ\text{C}$ opgesteld. Hierdoor is het niet mogelijk om een Thermokoppel te gebruiken. De andere twee optie halen wel de gespecificeerde temperatuur nauwkeurigheid van 0.1 $^\circ\text{C}$. Naast deze twee optie is er ook nog de optie van het zelf ontwikkelen van de sensor. Dit kan gedaan worden door middel van Titanium draad. Hierdoor zou zelfs een beter nauwkeurigheid van 0.1 $^\circ\text{C}$ sensor ontwikkeld worden. Het probleem hiermee is de prijs van Titanium draad. De prijs van het maken van de eigen sensor zal buiten het budget van dit vak liggen. Hierdoor is er niet gekozen voor deze keuze. De keuze die er nu nog zijn de platina-weerstand en Thermistor. De reactie tijd van de Thermistor is lager dan die van de platina-weerstand.  Beide hebben een reactie tijd die binnen de eisen van de applicatie vallen. Hierom wordt er gekeken naar andere kwaliteiten van het type sensoren. Als er gekeken wordt naar de lineariteit van de sensor is te zien dat de Thermistor een exponentiële lineariteit heeft. Terwijl de platina-weerstand een redelijke lineaire uitgang heeft in vergelijk tot de temperatuur verandering. Hierdoor is het mogelijk om met de platina-weerstand een eenvoudiger Signaal versterking systeem te ontwikkelen. Hierdoor is er gekozen voor het gebruik van een platina-weerstand voor het ontwerpen van de Temperatuur sensor.
+De specificaties hebben een nauwkeurigheid van 0.1 $^\circ\text{C}$ opgesteld. Hierdoor is het niet mogelijk om een thermokoppel te gebruiken. De andere twee optie halen wel de gespecificeerde temperatuur nauwkeurigheid van 0.1 $^\circ\text{C}$. Naast deze twee optie is er ook nog de optie van het zelf ontwikkelen van de sensor. Dit kan gedaan worden door middel van titaniumdraad. Dit komt doordat titanium net zoals platina een weerstand verandering heeft afhankelijk van temperatuur \cite{Titanium_temp_co}. Daarnaast heeft is titanium niet magnetische, wat ervoor zorgt dat het minder tot geen storing van buiten af oppikt. Hierdoor zou zelfs een beter nauwkeurigheid van 0.1 $^\circ\text{C}$ sensor ontwikkeld worden. Het probleem met titanium draad is de prijs. Hierdoor zal de sensor ontwikkelingskosten buiten het budget van dit vak gaan. Hierom is er niet gekozen voor deze keuze.  %hier ben ik nu met feedback verwerken
+
+De keuze die er nu nog zijn de platina-weerstand en Thermistor. De reactie tijd van de Thermistor is lager dan die van de platina-weerstand.  Beide hebben een reactie tijd die binnen de eisen van de applicatie vallen. Hierom wordt er gekeken naar andere kwaliteiten van het type sensoren. Als er gekeken wordt naar de lineariteit van de sensor is te zien dat de Thermistor een exponentiële lineariteit heeft. Terwijl de platina-weerstand een redelijke lineaire uitgang heeft in vergelijk tot de temperatuur verandering. Hierdoor is het mogelijk om met de platina-weerstand een eenvoudiger Signaal versterking systeem te ontwikkelen. Hierdoor is er gekozen voor het gebruik van een platina-weerstand voor het ontwerpen van de Temperatuur sensor.
 \\
 \newline
 Voor het gebruiken de platina-weerstand is er alleen een constant stroom bron nodig. 
@@ -66,11 +68,12 @@ Nu de keuzes zijn gemaakt voor het type sensor en versterker is het mogelijk om 
     \label{fig:Sensor_schematic_circuit_niveau}
 \end{figure}
 
-\subsection{ADC}
-Het temperatuur bereik is van -5 tot 55 graden, om een nauwkeurigheid van 0.1 te halen zijn dus $\frac{60}{0.1}= 600$ stappen nodig. Dit betekent dat er minimaal een 10 bit adc nodig is. De reactie snelheid van de gekozen sensor is 1 tot 50 seconde, dit kan gebruikt worden om de minimale bandbreedte te bepalen. Hiervoor wordt uitgegaan van de snelste tijd 1 seconde. Uitgaande van een maximale temperatuursverandering van -5 tot 55 graden. In 1 seconde reageert de sensor met ongeveer 63\% wat dus voor een maximale temperatuursverandering neerkomt op een stap van 
+\newpage
+\subsection{ADC} % dit in het blokschema niveau plaatsen
+Het temperatuur bereik is van -5 tot 55 graden, om een nauwkeurigheid van 0.1 te halen zijn dus $\frac{60}{0.1}= 600$ stappen nodig. Dit betekent dat er minimaal een 10 bit adc nodig is. De reactie snelheid van de gekozen sensor is 1 tot 50 seconde, dit kan gebruikt worden om de minimale bemonstering frequentie te bepalen. Hiervoor wordt uitgegaan van de snelste tijd 1 seconde. Uitgaande van een maximale temperatuursverandering van -5 tot 55 graden. In 1 seconde reageert de sensor met ongeveer 63\% wat dus voor een maximale temperatuursverandering neerkomt op een stap van $0.63\cdot600 = 378$. Om elke veranderingsstap te kunnen meten zal dus een bemonsteringsfrequentie van minimaal 378 Hz nodig zijn.
 
 \subsection{Digitale bewerking}
-Digitaal communicatie protocol nodig voor het uitlezen van luchtvochtigheid.
+% Digitaal communicatie protocol nodig voor het uitlezen van luchtvochtigheid.
 
 
 \subsection{DAC}

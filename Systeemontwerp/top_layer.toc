@@ -2,35 +2,38 @@
 \contentsline {section}{\numberline {1}Applicatie beschrijving}{4}{section.1}%
 \contentsline {section}{\numberline {2}Theoretisch kader}{4}{section.2}%
 \contentsline {section}{\numberline {3}Specificaties}{5}{section.3}%
-\contentsline {section}{\numberline {4}Systeem niveau}{6}{section.4}%
+\contentsline {section}{\numberline {4}Systeemniveau}{6}{section.4}%
 \contentsline {section}{\numberline {5}Blokschema niveau}{10}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Temperatuur sensor}{10}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Signaal bewerking}{10}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.1}Temperatuursensor}{10}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Signaalbewerking}{11}{subsection.5.2}%
 \contentsline {subsection}{\numberline {5.3}Relatieve luchtvochtigheid sensor}{11}{subsection.5.3}%
-\contentsline {subsection}{\numberline {5.4}Zend module}{11}{subsection.5.4}%
-\contentsline {subsection}{\numberline {5.5}Energie verdeling}{11}{subsection.5.5}%
-\contentsline {subsection}{\numberline {5.6}flowchart}{12}{subsection.5.6}%
-\contentsline {subsection}{\numberline {5.7}Vereenvoudigen van blokschema}{13}{subsection.5.7}%
-\contentsline {section}{\numberline {6}Circuitniveau}{15}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Temperatuur sensor}{15}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}Signaal versterking}{17}{subsection.6.2}%
-\contentsline {subsection}{\numberline {6.3}ADC}{17}{subsection.6.3}%
-\contentsline {subsection}{\numberline {6.4}Digitale bewerking}{18}{subsection.6.4}%
-\contentsline {subsection}{\numberline {6.5}DAC}{18}{subsection.6.5}%
-\contentsline {subsection}{\numberline {6.6}Zender}{18}{subsection.6.6}%
-\contentsline {section}{\numberline {7}Componentenniveau}{19}{section.7}%
-\contentsline {subsection}{\numberline {7.1}Temperatuur sensor}{19}{subsection.7.1}%
-\contentsline {subsubsection}{\numberline {7.1.1}Ruis berekening van de Stroombron}{21}{subsubsection.7.1.1}%
-\contentsline {subsection}{\numberline {7.2}Luchtvochtigheid sensor}{23}{subsection.7.2}%
-\contentsline {subsection}{\numberline {7.3}Digitale bewerking}{23}{subsection.7.3}%
-\contentsline {subsection}{\numberline {7.4}Instrumentatie versterker}{23}{subsection.7.4}%
-\contentsline {subsubsection}{\numberline {7.4.1}Ruis berekeningen van de Instrumentatie versterker}{26}{subsubsection.7.4.1}%
-\contentsline {subsection}{\numberline {7.5}Anti aliasing filter}{27}{subsection.7.5}%
-\contentsline {subsection}{\numberline {7.6}Zender}{29}{subsection.7.6}%
-\contentsline {section}{\numberline {8}Validatie en kalibratie}{30}{section.8}%
-\contentsline {section}{\numberline {9}EMC}{31}{section.9}%
-\contentsline {section}{\numberline {10}Bijlage}{34}{section.10}%
-\contentsline {subsection}{\numberline {10.1}Ruis berekeningen voor de temperatuur sensor}{34}{subsection.10.1}%
-\contentsline {subsection}{\numberline {10.2}Ruis berekeningen voor de Stroombron}{38}{subsection.10.2}%
-\contentsline {section}{List of Figuren}{40}{lstnumber.2.55}%
-\contentsline {section}{List of Tabellen}{40}{section*.3}%
+\contentsline {subsection}{\numberline {5.4}Zendmodule}{11}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}Energieverdeling}{11}{subsection.5.5}%
+\contentsline {subsection}{\numberline {5.6}flowchart}{13}{subsection.5.6}%
+\contentsline {subsection}{\numberline {5.7}Vereenvoudigen van blokschema}{14}{subsection.5.7}%
+\contentsline {section}{\numberline {6}Circuitniveau}{16}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Temperatuursensor}{16}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Signaal versterking}{18}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}ADC}{20}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}Digitale bewerking}{20}{subsection.6.4}%
+\contentsline {subsection}{\numberline {6.5}DAC}{20}{subsection.6.5}%
+\contentsline {subsection}{\numberline {6.6}Zender}{20}{subsection.6.6}%
+\contentsline {section}{\numberline {7}Componentenniveau}{21}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Temperatuur sensor}{21}{subsection.7.1}%
+\contentsline {subsubsection}{\numberline {7.1.1}Ruis berekening van de Stroombron}{23}{subsubsection.7.1.1}%
+\contentsline {subsection}{\numberline {7.2}Luchtvochtigheid sensor}{25}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Digitale bewerking}{25}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.4}Instrumentatie versterker}{25}{subsection.7.4}%
+\contentsline {subsubsection}{\numberline {7.4.1}Ruis berekeningen van de Instrumentatie versterker}{28}{subsubsection.7.4.1}%
+\contentsline {subsection}{\numberline {7.5}Anti aliasing filter}{29}{subsection.7.5}%
+\contentsline {subsection}{\numberline {7.6}Zender}{31}{subsection.7.6}%
+\contentsline {section}{\numberline {8}Validatie en kalibratie}{31}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Energie verbruik}{31}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Relatieve luchtvochtigheid sensor}{31}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}Temperatuur sensor}{32}{subsection.8.3}%
+\contentsline {section}{\numberline {9}EMC}{34}{section.9}%
+\contentsline {section}{\numberline {10}Bijlage}{37}{section.10}%
+\contentsline {subsection}{\numberline {10.1}Ruis berekeningen voor de temperatuursensor}{37}{subsection.10.1}%
+\contentsline {subsection}{\numberline {10.2}Ruis berekeningen voor de stroombron}{41}{subsection.10.2}%
+\contentsline {section}{Lijst van Figuren}{43}{lstnumber.2.55}%
+\contentsline {section}{Lijst van Tabellen}{43}{section*.3}%

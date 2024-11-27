@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.3.23)  4 NOV 2024 11:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.3.23)  21 NOV 2024 11:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1238,9 +1238,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--1
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 6--1
+
+ []
+
 [4]
 LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 
-5.
+4.
  (C:\Users\Knabb\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1cmss.fd
 File: ts1cmss.fd 2022/07/10 v2.5l Standard LaTeX font definitions
 ))
@@ -1249,7 +1254,7 @@ File: ts1cmss.fd 2022/07/10 v2.5l Standard LaTeX font definitions
 pdfTeX warning: pdflatex.exe (file ./pictures/Systeem_niveau_Systeemontwerp.dra
 wio.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> all
 owed
-<pictures/Systeem_niveau_Systeemontwerp.drawio.pdf, id=219, 358.4592pt x 89.373
+<pictures/Systeem_niveau_Systeemontwerp.drawio.pdf, id=237, 358.4592pt x 89.373
 9pt>
 File: pictures/Systeem_niveau_Systeemontwerp.drawio.pdf Graphic file (type pdf)
 
@@ -1277,7 +1282,7 @@ Overfull \hbox (59.95534pt too wide) in paragraph at lines 16--37
 pdfTeX warning: pdflatex.exe (file ./pictures/Systeem_niveau_Systeemontwerp_tem
 peratuur_sensor.drawio.pdf): PDF inclusion: found PDF version <1.7>, but at mos
 t version <1.5> allowed
-<pictures/Systeem_niveau_Systeemontwerp_temperatuur_sensor.drawio.pdf, id=222, 
+<pictures/Systeem_niveau_Systeemontwerp_temperatuur_sensor.drawio.pdf, id=240, 
 373.395pt x 165.7392pt>
 File: pictures/Systeem_niveau_Systeemontwerp_temperatuur_sensor.drawio.pdf Grap
 hic file (type pdf)
@@ -1310,7 +1315,7 @@ pdfTeX warning: pdflatex.exe (file ./pictures/Systeem_niveau_Systeemontwerp_rel
 atieve_luchtvochtigheid.drawio.pdf): PDF inclusion: found PDF version <1.7>, bu
 t at most version <1.5> allowed
 <pictures/Systeem_niveau_Systeemontwerp_relatieve_luchtvochtigheid.drawio.pdf, 
-id=251, 359.42279pt x 165.7392pt>
+id=269, 359.42279pt x 165.7392pt>
 File: pictures/Systeem_niveau_Systeemontwerp_relatieve_luchtvochtigheid.drawio.
 pdf Graphic file (type pdf)
 <use pictures/Systeem_niveau_Systeemontwerp_relatieve_luchtvochtigheid.drawio.p
@@ -1323,7 +1328,7 @@ vochtigheid.drawio.pdf  used on input line 73.
 pdfTeX warning: pdflatex.exe (file ./pictures/Systeem_niveau_Systeemontwerp_Sig
 naal_bewerking.drawio.pdf): PDF inclusion: found PDF version <1.7>, but at most
  version <1.5> allowed
-<pictures/Systeem_niveau_Systeemontwerp_Signaal_bewerking.drawio.pdf, id=254, 3
+<pictures/Systeem_niveau_Systeemontwerp_Signaal_bewerking.drawio.pdf, id=272, 3
 58.4592pt x 166.7028pt>
 File: pictures/Systeem_niveau_Systeemontwerp_Signaal_bewerking.drawio.pdf Graph
 ic file (type pdf)
@@ -1331,36 +1336,36 @@ ic file (type pdf)
 Package pdftex.def Info: pictures/Systeem_niveau_Systeemontwerp_Signaal_bewerki
 ng.drawio.pdf  used on input line 104.
 (pdftex.def)             Requested size: 188.21288pt x 87.5279pt.
-
-Overfull \hbox (37.01178pt too wide) in paragraph at lines 111--131
- [][] 
- []
-
 [7
 pdfTeX warning (ext4): destination with the same identifier (name{table.2}) has
  been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.131 \end{table}
-                 
+l.107 \end{figure}
+                  
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.131 \end{table}
-                 
+l.107 \end{figure}
+                  
 pdfTeX warning (ext4): destination with the same identifier (name{table.3}) has
  been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.131 \end{table}
-                  <./pictures/Systeem_niveau_Systeemontwerp_relatieve_luchtvoch
-tigheid.drawio.pdf>]
+l.107 \end{figure}
+                   <./pictures/Systeem_niveau_Systeemontwerp_relatieve_luchtvoc
+htigheid.drawio.pdf>]
+Overfull \hbox (37.01178pt too wide) in paragraph at lines 111--131
+ [][] 
+ []
+
+
 
 pdfTeX warning: pdflatex.exe (file ./pictures/Systeem_niveau_Systeemontwerp_Zen
 d_module.drawio.pdf): PDF inclusion: found PDF version <1.7>, but at most versi
 on <1.5> allowed
-<pictures/Systeem_niveau_Systeemontwerp_Zend_module.drawio.pdf, id=273, 358.459
+<pictures/Systeem_niveau_Systeemontwerp_Zend_module.drawio.pdf, id=291, 358.459
 2pt x 166.7028pt>
 File: pictures/Systeem_niveau_Systeemontwerp_Zend_module.drawio.pdf Graphic fil
 e (type pdf)
@@ -1395,7 +1400,7 @@ l.164
 pdfTeX warning: pdflatex.exe (file ./pictures/Systeem_niveau_Systeemontwerp_Ont
 vang_module.drawio.pdf): PDF inclusion: found PDF version <1.7>, but at most ve
 rsion <1.5> allowed
-<pictures/Systeem_niveau_Systeemontwerp_Ontvang_module.drawio.pdf, id=302, 375.
+<pictures/Systeem_niveau_Systeemontwerp_Ontvang_module.drawio.pdf, id=320, 375.
 32219pt x 165.7392pt>
 File: pictures/Systeem_niveau_Systeemontwerp_Ontvang_module.drawio.pdf Graphic 
 file (type pdf)
@@ -1427,7 +1432,7 @@ f>]
 pdfTeX warning: pdflatex.exe (file ./pictures/Blok_schema_systeem_ontwerp_1.dra
 wio.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> all
 owed
-<pictures/Blok_schema_systeem_ontwerp_1.drawio.pdf, id=319, 594.30032pt x 217.7
+<pictures/Blok_schema_systeem_ontwerp_1.drawio.pdf, id=337, 594.30032pt x 217.7
 7359pt>
 File: pictures/Blok_schema_systeem_ontwerp_1.drawio.pdf Graphic file (type pdf)
 
@@ -1436,7 +1441,7 @@ Package pdftex.def Info: pictures/Blok_schema_systeem_ontwerp_1.drawio.pdf  use
 d on input line 8.
 (pdftex.def)             Requested size: 355.51817pt x 130.27637pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 17--21
+Underfull \hbox (badness 10000) in paragraph at lines 22--26
 
  []
 
@@ -1445,130 +1450,136 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.7}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.21 
-      <./pictures/Blok_schema_systeem_ontwerp_1.drawio.pdf>] [11
+l.26 
+      <./pictures/Blok_schema_systeem_ontwerp_1.drawio.pdf>] [11] [12
 pdfTeX warning (ext4): destination with the same identifier (name{table.7}) has
  been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.47 \newpage
+l.52 \newpage
              ]
 
 pdfTeX warning: pdflatex.exe (file ./pictures/jochem_flowchart.drawio.pdf): PDF
  inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<pictures/jochem_flowchart.drawio.pdf, id=347, 382.5492pt x 581.2917pt>
+<pictures/jochem_flowchart.drawio.pdf, id=369, 382.5492pt x 581.2917pt>
 File: pictures/jochem_flowchart.drawio.pdf Graphic file (type pdf)
 <use pictures/jochem_flowchart.drawio.pdf>
 Package pdftex.def Info: pictures/jochem_flowchart.drawio.pdf  used on input li
-ne 53.
+ne 58.
 (pdftex.def)             Requested size: 271.86234pt x 413.11026pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 49--56
+Underfull \hbox (badness 10000) in paragraph at lines 54--61
 
  []
 
-[12
+[13
 pdfTeX warning (ext4): destination with the same identifier (name{figure.8}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.59 
+l.64 
       <./pictures/jochem_flowchart.drawio.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./pictures/blokschema.drawio.pdf): PDF inclu
 sion: found PDF version <1.7>, but at most version <1.5> allowed
-<pictures/blokschema.drawio.pdf, id=366, 549.01106pt x 263.06279pt>
+<pictures/blokschema.drawio.pdf, id=389, 549.01106pt x 263.06279pt>
 File: pictures/blokschema.drawio.pdf Graphic file (type pdf)
 <use pictures/blokschema.drawio.pdf>
-Package pdftex.def Info: pictures/blokschema.drawio.pdf  used on input line 66.
+Package pdftex.def Info: pictures/blokschema.drawio.pdf  used on input line 71.
 
 (pdftex.def)             Requested size: 418.25368pt x 200.41147pt.
 ) (circuit_niveau.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [13]
-[14
+ [14]
+[15
 pdfTeX warning (ext4): destination with the same identifier (name{figure.9}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.1 \newpage
              <./pictures/blokschema.drawio.pdf>]
-<pictures/RS_sensor_buyers_guide.png, id=387, 949.29657pt x 648.17157pt>
+<pictures/RS_sensor_buyers_guide.png, id=409, 949.29657pt x 648.17157pt>
 File: pictures/RS_sensor_buyers_guide.png Graphic file (type png)
 <use pictures/RS_sensor_buyers_guide.png>
 Package pdftex.def Info: pictures/RS_sensor_buyers_guide.png  used on input lin
 e 11.
 (pdftex.def)             Requested size: 418.25368pt x 285.58209pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 16--21
-
- []
-
-[15
+ [16
 pdfTeX warning (ext4): destination with the same identifier (name{figure.10}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.21 
+l.17 
       <./pictures/RS_sensor_buyers_guide.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 18--23
+
+ []
+
+
 
 pdfTeX warning: pdflatex.exe (file ./pictures/Stroombron.drawio.pdf): PDF inclu
 sion: found PDF version <1.7>, but at most version <1.5> allowed
-<pictures/Stroombron.drawio.pdf, id=399, 151.5261pt x 94.4328pt>
+<pictures/Stroombron.drawio.pdf, id=422, 151.5261pt x 94.4328pt>
 File: pictures/Stroombron.drawio.pdf Graphic file (type pdf)
 <use pictures/Stroombron.drawio.pdf>
-Package pdftex.def Info: pictures/Stroombron.drawio.pdf  used on input line 24.
+Package pdftex.def Info: pictures/Stroombron.drawio.pdf  used on input line 26.
 
 (pdftex.def)             Requested size: 209.12683pt x 130.33755pt.
 
-Overfull \hbox (38.25217pt too wide) in paragraph at lines 32--48
+Overfull \hbox (38.25217pt too wide) in paragraph at lines 34--50
  [][] 
  []
 
-[16
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [17
 pdfTeX warning (ext4): destination with the same identifier (name{figure.11}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.52 
-     
-pdfTeX warning (ext4): destination with the same identifier (name{table.8}) has
- been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.52 
+l.51 
       <./pictures/Stroombron.drawio.pdf>]
-<pictures/instrumentatie_versterk.png, id=416, 2569.6pt x 1673.25125pt>
+<pictures/instrumentatie_versterk.png, id=440, 2569.6pt x 1673.25125pt>
 File: pictures/instrumentatie_versterk.png Graphic file (type png)
 <use pictures/instrumentatie_versterk.png>
 Package pdftex.def Info: pictures/instrumentatie_versterk.png  used on input li
-ne 55.
+ne 57.
 (pdftex.def)             Requested size: 209.12683pt x 136.16069pt.
 
 
 pdfTeX warning: pdflatex.exe (file ./pictures/Circuit_nivea_schema.drawio.pdf):
  PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<pictures/Circuit_nivea_schema.drawio.pdf, id=419, 397.485pt x 118.5228pt>
+<pictures/Circuit_nivea_schema.drawio.pdf, id=443, 397.485pt x 118.5228pt>
 File: pictures/Circuit_nivea_schema.drawio.pdf Graphic file (type pdf)
 <use pictures/Circuit_nivea_schema.drawio.pdf>
 Package pdftex.def Info: pictures/Circuit_nivea_schema.drawio.pdf  used on inpu
-t line 64.
+t line 66.
 (pdftex.def)             Requested size: 334.60422pt x 99.77547pt.
-[17
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [18
+pdfTeX warning (ext4): destination with the same identifier (name{table.8}) has
+ been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.70 
+     
 pdfTeX warning (ext4): destination with the same identifier (name{figure.12}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.71 
-     
+l.70 
+      <./pictures/instrumentatie_versterk.png>] [19
 pdfTeX warning (ext4): destination with the same identifier (name{figure.13}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.71 
-      <./pictures/instrumentatie_versterk.png> <./pictures/Circuit_nivea_schema
-.drawio.pdf>]) (component_niveau.tex [18]
+l.71 \newpage
+              <./pictures/Circuit_nivea_schema.drawio.pdf>])
+(component_niveau.tex [20]
 Underfull \hbox (badness 10000) in paragraph at lines 6--11
 
  []
@@ -1578,8 +1589,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 14--18
 
  []
 
-[19]
-<pictures/Schema_current_source.png, id=455, 703.87968pt x 822.07124pt>
+[21]
+<pictures/Schema_current_source.png, id=483, 703.87968pt x 822.07124pt>
 File: pictures/Schema_current_source.png Graphic file (type png)
 <use pictures/Schema_current_source.png>
 Package pdftex.def Info: pictures/Schema_current_source.png  used on input line
@@ -1595,32 +1606,29 @@ Underfull \hbox (badness 10000) in paragraph at lines 26--33
 
  []
 
-[20
+[22
 pdfTeX warning (ext4): destination with the same identifier (name{figure.14}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.33 
-      <./pictures/Schema_current_source.png>] [21]
+      <./pictures/Schema_current_source.png>] [23]
 Overfull \hbox (34.9725pt too wide) detected at line 72
 \OML/cmm/m/it/12 I[] \OT1/cmr/m/n/12 = [] = 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12
  9266 \OMS/cmsy/m/n/12 ^^A \OT1/cmr/m/n/12 10[] []
  []
 
-[22]
+[24]
 Underfull \hbox (badness 10000) in paragraph at lines 110--112
 
  []
 
-
-Underfull \vbox (badness 1629) has occurred while \output is active []
-
- [23]
+[25]
 
 pdfTeX warning: pdflatex.exe (file ./pictures/schema_instrumentatie_versterker.
 drawio.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> 
 allowed
-<pictures/schema_instrumentatie_versterker.drawio.pdf, id=493, 473.85028pt x 50
+<pictures/schema_instrumentatie_versterker.drawio.pdf, id=523, 473.85028pt x 50
 .1072pt>
 File: pictures/schema_instrumentatie_versterker.drawio.pdf Graphic file (type p
 df)
@@ -1643,7 +1651,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 128--135
 pdfTeX warning: pdflatex.exe (file ./pictures/schema_instrumentatie_versterker_
 1.drawio.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5
 > allowed
-<pictures/schema_instrumentatie_versterker_1.drawio.pdf, id=495, 351.23218pt x 
+<pictures/schema_instrumentatie_versterker_1.drawio.pdf, id=525, 351.23218pt x 
 118.5228pt>
 File: pictures/schema_instrumentatie_versterker_1.drawio.pdf Graphic file (type
  pdf)
@@ -1651,7 +1659,10 @@ File: pictures/schema_instrumentatie_versterker_1.drawio.pdf Graphic file (type
 Package pdftex.def Info: pictures/schema_instrumentatie_versterker_1.drawio.pdf
   used on input line 138.
 (pdftex.def)             Requested size: 334.60422pt x 112.91429pt.
-[24
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [26
 pdfTeX warning (ext4): destination with the same identifier (name{figure.15}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
@@ -1662,7 +1673,7 @@ Overfull \hbox (47.08044pt too wide) in paragraph at lines 147--158
  [][] 
  []
 
-[25
+[27
 pdfTeX warning (ext4): destination with the same identifier (name{figure.16}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
@@ -1675,19 +1686,19 @@ pdfTeX warning (ext4): destination with the same identifier (name{table.9}) has
                                                   \__shipout_drop_firstpage_...
 l.165 
        <./pictures/schema_instrumentatie_versterker_1.drawio.pdf>]
-<pictures/ruis_plot.png, id=538, 1116.17pt x 657.45625pt>
+<pictures/ruis_plot.png, id=566, 1116.17pt x 657.45625pt>
 File: pictures/ruis_plot.png Graphic file (type png)
 <use pictures/ruis_plot.png>
 Package pdftex.def Info: pictures/ruis_plot.png  used on input line 181.
 (pdftex.def)             Requested size: 376.42575pt x 221.72641pt.
-<pictures/Intrumentatie_amplifier_schematic.png, id=541, 705.13437pt x 446.6687
+<pictures/Intrumentatie_amplifier_schematic.png, id=569, 705.13437pt x 446.6687
 5pt>
 File: pictures/Intrumentatie_amplifier_schematic.png Graphic file (type png)
 <use pictures/Intrumentatie_amplifier_schematic.png>
 Package pdftex.def Info: pictures/Intrumentatie_amplifier_schematic.png  used o
 n input line 190.
 (pdftex.def)             Requested size: 292.77629pt x 185.45949pt.
- [26
+ [28
 pdfTeX warning (ext4): destination with the same identifier (name{table.10}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
@@ -1700,7 +1711,7 @@ as been already used, duplicate ignored
                                                   \__shipout_drop_firstpage_...
 l.193 \end{figure}
                    <./pictures/ruis_plot.png>]
-<pictures/Temp_sensor_complete_schematic.png, id=552, 966.61125pt x 317.185pt>
+<pictures/Temp_sensor_complete_schematic.png, id=580, 966.61125pt x 317.185pt>
 File: pictures/Temp_sensor_complete_schematic.png Graphic file (type png)
 <use pictures/Temp_sensor_complete_schematic.png>
 Package pdftex.def Info: pictures/Temp_sensor_complete_schematic.png  used on i
@@ -1709,49 +1720,102 @@ nput line 199.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [27
+ [29
 pdfTeX warning (ext4): destination with the same identifier (name{figure.18}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.203 
-       <./pictures/Intrumentatie_amplifier_schematic.png>] [28
+       <./pictures/Intrumentatie_amplifier_schematic.png>] [30
 pdfTeX warning (ext4): destination with the same identifier (name{figure.19}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.210 \newpage
                <./pictures/Temp_sensor_complete_schematic.png>])
-(Validatie_en_Kalibratie.tex [29]) (EMC.tex [30]
-<pictures/pcb_render.png, id=574, 487.8225pt x 448.17438pt>
+(Validatie_en_Kalibratie.tex
+<pictures/meetresultaten_luchtvochtigheid.png, id=596, 854.44218pt x 447.17062p
+t>
+File: pictures/meetresultaten_luchtvochtigheid.png Graphic file (type png)
+<use pictures/meetresultaten_luchtvochtigheid.png>
+Package pdftex.def Info: pictures/meetresultaten_luchtvochtigheid.png  used on 
+input line 28.
+(pdftex.def)             Requested size: 313.69025pt x 164.16776pt.
+ [31
+pdfTeX warning (ext4): destination with the same identifier (name{table.11}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.32 
+     ]
+<pictures/meet_resultaten_temp_sensor.png, id=606, 1610.26593pt x 892.08281pt>
+File: pictures/meet_resultaten_temp_sensor.png Graphic file (type png)
+<use pictures/meet_resultaten_temp_sensor.png>
+Package pdftex.def Info: pictures/meet_resultaten_temp_sensor.png  used on inpu
+t line 37.
+(pdftex.def)             Requested size: 313.69025pt x 173.77168pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [32
+pdfTeX warning (ext4): destination with the same identifier (name{figure.20}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.41 
+      <./pictures/meetresultaten_luchtvochtigheid.png>]
+<pictures/trim_resultaten_temp_sensor.png, id=614, 482.895pt x 270.3555pt>
+File: pictures/trim_resultaten_temp_sensor.png Graphic file (type png)
+<use pictures/trim_resultaten_temp_sensor.png>
+Package pdftex.def Info: pictures/trim_resultaten_temp_sensor.png  used on inpu
+t line 44.
+(pdftex.def)             Requested size: 313.69025pt x 175.62997pt.
+) (EMC.tex [33
+pdfTeX warning (ext4): destination with the same identifier (name{figure.21}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.1 \newpage
+            
+pdfTeX warning (ext4): destination with the same identifier (name{figure.22}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.1 \newpage
+             <./pictures/meet_resultaten_temp_sensor.png> <./pictures/trim_resu
+ltaten_temp_sensor.png>]
+<pictures/pcb_render.png, id=622, 487.8225pt x 448.17438pt>
 File: pictures/pcb_render.png Graphic file (type png)
 <use pictures/pcb_render.png>
 Package pdftex.def Info: pictures/pcb_render.png  used on input line 6.
 (pdftex.def)             Requested size: 313.69025pt x 288.19833pt.
-) [31
-pdfTeX warning (ext4): destination with the same identifier (name{figure.20}) h
+) [34
+pdfTeX warning (ext4): destination with the same identifier (name{figure.23}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.21 	\newpage
                <./pictures/pcb_render.png>] (top_layer.bbl
-Underfull \hbox (badness 1028) in paragraph at lines 52--55
+LaTeX Font Info:    Font shape `OT1/cmss/m/it' in size <12> not available
+(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 40.
+
+Underfull \hbox (badness 1028) in paragraph at lines 57--60
 []\OT1/cmss/m/n/12 RS, ``Ther-mo-cou-ple se-lec-tion guide,'' 2024. [On-line]. 
 Avai-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 79--82
+Underfull \hbox (badness 10000) in paragraph at lines 90--93
 \OT1/cmss/m/n/12 / / 4donline . ihs . com / images / VipMasterIC / IC / RNCC / 
 RNCC-[]S-[]A0010774807 /
  []
 
 
-Underfull \hbox (badness 1320) in paragraph at lines 91--94
+Underfull \hbox (badness 1320) in paragraph at lines 102--105
 []\OT1/cmss/m/n/12 M. T. Inc., ``Mcp6001/1r/1u/2/4 fea-tu-res,'' 2020. [On-
  []
 
-[32]) (Bijlage.tex [33]
+[35]) (Bijlage.tex [36]
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 6.
 LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 6
@@ -1760,31 +1824,31 @@ LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 6
 (C:\Users\Knabb\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
-[34]
+[37]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [35]
+ [38]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [36]
-[37] [38]) [39] (top_layer.lof)
+ [39]
+[40] [41]) [42] (top_layer.lof)
 \tf@lof=\write7
 \openout7 = `top_layer.lof'.
 
- (top_layer.lot)
+ (top_layer.lot [43])
 \tf@lot=\write8
 \openout8 = `top_layer.lot'.
 
- [40] (top_layer.aux)
+ [44] (top_layer.aux)
 Package rerunfilecheck Info: File `top_layer.out' has not changed.
-(rerunfilecheck)             Checksum: AFFD31D1727876CA52EA882075C592D6;5279.
+(rerunfilecheck)             Checksum: 84C7BACD23008A79EE04982776F746DB;5764.
  ) 
 Here is how much of TeX's memory you used:
- 32066 strings out of 476334
- 613120 string characters out of 5787971
+ 32112 strings out of 476334
+ 614436 string characters out of 5787971
  2062382 words of memory out of 5000000
- 51514 multiletter control sequences out of 15000+600000
- 523685 words of font info for 75 fonts, out of 8000000 for 9000
+ 51543 multiletter control sequences out of 15000+600000
+ 524044 words of font info for 76 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  104i,20n,97p,1845b,2595s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {C:/Users/Knabb/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc} <C
@@ -1802,12 +1866,13 @@ nabb/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss17.pfb><C
 :/Users/Knabb/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss
 8.pfb><C:/Users/Knabb/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
 /cm/cmssbx10.pfb><C:/Users/Knabb/AppData/Local/Programs/MiKTeX/fonts/type1/publ
-ic/amsfonts/cm/cmsy10.pfb><C:/Users/Knabb/AppData/Local/Programs/MiKTeX/fonts/t
-ype1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Knabb/AppData/Local/Programs/MiKTeX
-/fonts/type1/urw/courier/ucrr8a.pfb>
-Output written on top_layer.pdf (40 pages, 1254786 bytes).
+ic/amsfonts/cm/cmssi12.pfb><C:/Users/Knabb/AppData/Local/Programs/MiKTeX/fonts/
+type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Knabb/AppData/Local/Programs/MiKT
+eX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Knabb/AppData/Local/Progr
+ams/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb>
+Output written on top_layer.pdf (44 pages, 1469985 bytes).
 PDF statistics:
- 982 PDF objects out of 1000 (max. 8388607)
- 301 named destinations out of 1000 (max. 500000)
- 393 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1049 PDF objects out of 1200 (max. 8388607)
+ 314 named destinations out of 1000 (max. 500000)
+ 432 words of extra memory for PDF output out of 10000 (max. 10000000)
 
